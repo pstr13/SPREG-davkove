@@ -1,0 +1,2 @@
+- [Peter — správca projektu](user_peter.md) — deleguje na Romana/Stana, potvrdzuje findingy, stručná komunikácia
+- [Koniec session protokol je automatický](feedback_session_end.md) — pri signáloch konca session okamžite finalizovať journal a pushnúť

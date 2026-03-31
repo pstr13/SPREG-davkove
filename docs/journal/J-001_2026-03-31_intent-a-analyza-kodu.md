@@ -1,7 +1,7 @@
 ---
 id: J-001
 date: 2026-03-31
-status: draft
+status: done
 participants: [roman, claude]
 ---
 
