@@ -1,9 +1,11 @@
 ---
 id: F-010
 date: 2026-03-31
-status: identified
+status: fixed
 severity: critical
 scenario: S38
+fixed_in_commit: eabc3f5
+fixed_date: 2026-03-31
 ---
 
 # F-010 — S38RouteConfiguration: Batch filter je VNORENÝ vo File filter → Batch nikdy FAILED
@@ -73,3 +75,22 @@ Pridať `.end()` po riadku 137 (File JPA persist):
 ## Verifikácia
 
 Roman: Skontrolovať UAT logy — existujú dávky S38 v stave IN_PROGRESS/otvorenom stave dlhšie ako 1 deň?
+
+## Fix — APLIKOVANÝ
+
+Commit `eabc3f5` (2026-03-31) pridal `.end() // filter file` na riadok 140.
+Batch filter je teraz na správnej úrovni — nie vnorený vo File filter.
+
+```java
+.to(JPA_ENTITY_BASE)
+.end() // filter file  ← PRIDANÉ
+
+// Batch — teraz správne na top-level
+.filter(variable(Constant.BATCH).isNotNull())
+    ...
+.end() // filter batch
+.stop();
+```
+
+Rovnaký commit tiež opravil double-JPA-write v `DIRECT_RETRYABLE_DOCUMENT_ERROR`
+(`increaseFailedAttempt()` sa volá pred max-retries filtrom, nie za ním).

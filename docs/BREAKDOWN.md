@@ -47,9 +47,10 @@ Findingy F-001 až F-008 sú z JVP-nedoplatky — neaplikovateľné priamo na pr
 
 | # | Úloha | Status | Finding |
 |---|-------|--------|---------|
-| 2C.1 | Batch filter nested v File filter → Batch nikdy FAILED | **identified** | F-010 |
+| 2C.1 | Batch filter nested v File filter → Batch nikdy FAILED | **fixed** (commit eabc3f5) | F-010 |
 | 2C.2 | Žiadna paginácia pri loadovaní dokumentov → OOM | **identified** | F-013 |
-| 2C.3 | Hardcoded threads(10,10) — nekonfigurovateľné | **identified** | F-015 |
+| 2C.3 | Hardcoded threads(10,10) — nekonfigurovateľné | **identified** | (poznámka J-002) |
+| 2C.4 | maximumRedeliveries hardcoded na 3 (regres z eabc3f5) | **identified** | F-015 |
 
 ## Fáza 3 — Edge cases (ak ostane čas)
 

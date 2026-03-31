@@ -3,7 +3,7 @@
 > Posledná aktualizácia: 2026-03-31
 
 ## Jednou vetou
-Produkčný kód (batch-services-integration) analyzovaný — 6 nových findingov (3 kritické), čaká verifikácia Romanom.
+F-010 opravený v commit eabc3f5 — potvrdzuje reálnosť nájdených bugov; 5 otvorených findingov čaká verifikáciu.
 
 ## Čo je hotové
 - GitHub repo vytvorené (pstr13/SPREG-davkove)
@@ -15,6 +15,8 @@ Produkčný kód (batch-services-integration) analyzovaný — 6 nových finding
 - **batch-services-integration repo stiahnutý a analyzovaný** (táto session)
 - **6 nových findingov identifikovaných (F-009 až F-014)** — 3 kritické, 3 vysoké
 - docs/findings/ adresár vytvorený s detailnými nálezmi
+- **F-010 opravený** v commit eabc3f5 (2026-03-31) — nested Batch filter fixed
+- F-015 identifikovaný (regres z eabc3f5 — maximumRedeliveries hardcoded)
 
 ## Čo je rozpracované
 - Verifikácia F-009 až F-014 Romanom
