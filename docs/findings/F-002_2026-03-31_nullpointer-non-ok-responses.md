@@ -2,7 +2,7 @@
 id: F-002
 date: 2026-03-31
 severity: critical
-status: confirmed
+status: confirmed-by-peter
 component: Scenario352Debt.java, GenerateXmlFormBean.java
 lines: [Scenario352Debt:138-142 vs 162, GenerateXmlFormBean:95-156]
 verified_by: static-analysis + XML examples
