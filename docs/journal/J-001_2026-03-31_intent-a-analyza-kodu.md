@@ -32,6 +32,14 @@ IS REG kód nemá batch logiku na aplikačnej úrovni — každé podanie sa spr
 7. **Namespace anomália** — FO↔PO namespace swap
 8. **alternativeDestination** — nový parameter v callbacku, nehandlovaný
 
+## Verifikácia Fázy 1
+
+| Finding | Verdict | Detail |
+|---------|---------|--------|
+| F-001 | **CONFIRMED** | registryRecordNumber v DB = "true"/"false", skutočné číslo sa stráca |
+| F-002 | **CONFIRMED** | GenerateXmlFormBean volaný pred resultCode check → NPE pri UNIDENTIFIED_PERSON (min. 3 crash body) |
+| F-003 | **CONFIRMED (tech debt)** | Pozičný prístup funguje s aktuálnym WSDL, riziko pri zmene |
+
 ## Ďalšie kroky
-- Vytvorený BREAKDOWN s 3-fázovým prístupom
-- Fáza 1: verifikácia kritických bugov proti UAT logom
+- Fáza 2: Analýza batch/concurrency správania — prečo zlyhávajú väčšie dávky
+- Roman potvrdí/zamietne F-001 a F-002

@@ -10,9 +10,9 @@ Analýza legacy integračného kódu IS REG (dávkové spracovanie) s fokuson na
 
 | # | Úloha | Status | Finding |
 |---|-------|--------|---------|
-| 1.1 | Overiť data corruption bug (Scenario351Notify:165 — registryRecordNumber vs assistedValue) | todo | F-001 |
-| 1.2 | Overiť NullPointer v GenerateXmlFormBean pri UNCOMPLETE_DATA | todo | F-002 |
-| 1.3 | Overiť type-unsafe list access v Scenario352Debt:162 | todo | F-003 |
+| 1.1 | Overiť data corruption bug (Scenario351Notify:165 — registryRecordNumber vs assistedValue) | **confirmed** | F-001 |
+| 1.2 | Overiť NullPointer v GenerateXmlFormBean pri UNCOMPLETE_DATA / UNIDENTIFIED_PERSON | **confirmed** | F-002 |
+| 1.3 | Overiť type-unsafe list access v Scenario352Debt:162 | **confirmed** (tech debt) | F-003 |
 
 ## Fáza 2 — Analýza batch/concurrency správania (priorita: vysoká)
 
