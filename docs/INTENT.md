@@ -1,6 +1,6 @@
 # INTENT — SPREG-davkove
 
-> Status: draft
+> Status: approved
 > Dátum: 2026-03-31
 
 ## Čo riešime
@@ -19,23 +19,30 @@ Legacy integračný kód IS REG je komplexný a historicky narastený. Bugy odha
 
 ## Ako vyzerá úspech
 
-_Čaká na INTENT interview s riešiteľom (Roman)._
+- Všetky potenciálne chyby na dávkových integráciách legacy rozhraní IS REG sú identifikované
+- Každý finding je potvrdený Romanom (validácia že je reálny problém)
+- Potvrdené findingy sú opravené v kóde
 
 ## Čo výslovne neriešime (out-of-scope)
 
-_Čaká na INTENT interview s riešiteľom (Roman)._
+- Vedome nedefinované — scope nie je obmedzený. Ak analýza odhalí problém, riešime ho bez ohľadu na kategóriu.
 
 ## Obmedzenia
 
-_Čaká na INTENT interview s riešiteľom (Roman)._
+- UAT končí ~7. apríl 2026 — všetko čo má hodnotu musí byť identifikované do vtedy
+- Roman robí analýzu popri bug fixingu na IS REG — kapacita je obmedzená, AI facilitátor poskytuje maximálnu podporu
+- Fokus: problémy s dávkami s väčším počtom súborov/dávok
 
 ## Kontext
 
-- Zdrojové kódy IS REG sú dostupné v repo [JVP-nedoplatky](https://github.com/pstr13/JVP-nedoplatky)
-- Kód je už v UAT — analýza prebieha paralelne s UAT testovaním
-- Projekt JVP-nedoplatky slúži výlučne ako zdroj kódu — jeho INTENT a kontext sa nepreberajú
+- Zdrojové kódy IS REG sú dostupné v repo [JVP-nedoplatky](https://github.com/pstr13/JVP-nedoplatky) — klonované v hub projekte, slúži výlučne ako zdroj (INTENT JVP-nedoplatky sa nepreberá)
+- JVP-nedoplatky obsahuje: zdrojové kódy IS REG, enterprise architekt dáta, XML príklady callback odpovedi, logy z manuálnych testov, e-mailové podklady
+- Kód je už v UAT — analýza prebieha paralelne s riešením bugov na projekte IS REG
+- Účel: proaktívne identifikovať potenciálne chyby na dávkových integráciách legacy rozhraní IS REG skôr, ako sa prejavia počas UAT alebo PROD
+- Analytik Stano poskytuje doménový kontext
 
 ## Tím
 
 - **Riešiteľ**: Roman
 - **Reviewer**: Tibor
+- **Analytik**: Stano
