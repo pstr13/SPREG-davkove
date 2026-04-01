@@ -1,0 +1,703 @@
+Received: from AS2PR03MB9003.eurprd03.prod.outlook.com (2603:10a6:20b:5e6::17)
+ by DBBPR03MB6969.eurprd03.prod.outlook.com with HTTPS; Wed, 18 Mar 2026
+ 10:33:28 +0000
+Received: from AS8PR03MB10054.eurprd03.prod.outlook.com
+ (2603:10a6:20b:63b::22) by AS2PR03MB9003.eurprd03.prod.outlook.com
+ (2603:10a6:20b:5e6::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9700.22; Wed, 18 Mar
+ 2026 10:33:26 +0000
+Received: from AS8PR03MB10054.eurprd03.prod.outlook.com
+ ([fe80::b87f:7b88:7271:aaf4]) by AS8PR03MB10054.eurprd03.prod.outlook.com
+ ([fe80::b87f:7b88:7271:aaf4%5]) with mapi id 15.20.9723.018; Wed, 18 Mar 2026
+ 10:33:26 +0000
+From: =?iso-8859-2?Q?Roman_H=F6her?= <roman.hoher@aspecta.sk>
+To: Pavel Pavlenda <pavel.pavlenda@nuaktiv.sk>,
+	=?iso-8859-2?Q?Miroslav_Jur=EDk?= <miroslav.jurik@nuaktiv.sk>,
+	=?iso-8859-2?Q?Miroslava_Klu=E8ikov=E1?= <miroslava.klucikova@nuaktiv.sk>
+CC: =?iso-8859-2?Q?Stanislav_M=E1jek?= <stanislav.majek@aspecta.sk>, Peter
+ Senko <peter.senko@aspecta.sk>, =?iso-8859-2?Q?Daniela_Sz=E9kelyov=E1?=
+	<daniela.szekelyova@aspecta.sk>, =?iso-8859-2?Q?Tibor_Se=F2ko?=
+	<tibor.senko@aspecta.sk>, =?iso-8859-2?Q?Milada_Pl=B9kov=E1?=
+	<milada.plskova@aspecta.sk>, =?iso-8859-2?Q?Peter_Pivarn=EDk?=
+	<peter.pivarnik@aspecta.sk>, =?iso-8859-2?Q?Michal_Mor=E1vek?=
+	<michal.moravek@aspecta.sk>, =?iso-8859-2?Q?Peter_Stro=E8ka?=
+	<peter.strocka@aspecta.sk>, =?iso-8859-2?Q?J=E1n_Mal=FD?=
+	<jan.maly@aspecta.sk>
+Subject:
+	=?iso-8859-2?Q?SocPoist,_IS_REG,_V=FDkonnos=BB_d=E1vkov=FDch_scen=E1rov_s?=
+ =?iso-8859-2?Q?_pe=E8aten=EDm?=
+Thread-Topic:
+	=?iso-8859-2?Q?SocPoist,_IS_REG,_V=FDkonnos=BB_d=E1vkov=FDch_scen=E1rov_s?=
+ =?iso-8859-2?Q?_pe=E8aten=EDm?=
+Thread-Index: AQHctrdNfngPlZ3Yak6HFeEki+zgQg==
+Importance: high
+X-Priority: 1
+Date: Wed, 18 Mar 2026 10:33:26 +0000
+Message-ID:
+	<AS8PR03MB10054E2AAA0FEBF3074238137944EA@AS8PR03MB10054.eurprd03.prod.outlook.com>
+Keywords: cc
+Accept-Language: sk-SK, en-US
+Content-Language: sk-SK
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	AS8PR03MB10054.eurprd03.prod.outlook.com
+X-Mentions: pavel.pavlenda@nuaktiv.sk
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id:
+	d0f551e6-2e1d-4b8c-e311-08de84d9c9fe
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=aspecta.sk;
+x-ms-office365-filtering-correlation-id: d0f551e6-2e1d-4b8c-e311-08de84d9c9fe
+x-ms-traffictypediagnostic:
+	AS8PR03MB10054:EE_|AS2PR03MB9003:EE_|DBBPR03MB6969:EE_
+x-microsoft-antispam:
+	BCL:0;ARA:13230040|366016|6049299003|3109299003|7049299003|69100299015|376014|13003099007|8096899003|18002099003|56012099003|41050700001;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:sk;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AS8PR03MB10054.eurprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(6049299003)(3109299003)(7049299003)(69100299015)(376014)(13003099007)(8096899003)(18002099003)(56012099003)(41050700001);DIR:INT;
+x-ld-processed: 9b449085-b541-4408-be3b-3aa2e0f2f689,ExtAddr
+x-ms-exchange-crosstenant-originalarrivaltime: 18 Mar 2026 10:33:26.4833 (UTC)
+x-ms-exchange-crosstenant-network-message-id:
+	d0f551e6-2e1d-4b8c-e311-08de84d9c9fe
+x-ms-exchange-crosstenant-authsource: AS8PR03MB10054.eurprd03.prod.outlook.com
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-id: 9b449085-b541-4408-be3b-3aa2e0f2f689
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-transport-crosstenantheadersstamped: AS2PR03MB9003
+x-ms-exchange-crosstenant-mailboxtype: HOSTED
+x-ms-exchange-crosstenant-userprincipalname:
+	F7+JbfebozYMSku9uzHdbysVgWHZPFW2JrhO2MOqOAFhElaUr+vzH0l7RIu3Ay4Qd7EIYdwilPf0yAk8/7VWPw==
+x-ms-exchange-transport-endtoendlatency: 00:00:01.6120753
+x-ms-exchange-processed-by-bccfoldering: 15.20.9723.008
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009189)(140003);
+X-Microsoft-Antispam-Message-Info:
+	FYu3IiAG2QqItKLGDbYGzPDl2GTqvi8CqxdWdyaZxDlDrrUXrvEtBvtacJ2ztte1Ya0ZiBPQr/IzAPCGxIlz3g9nEOEDmaeZxwedFJuFaDRQY8+RkJDRhCZTuOC5jTbgc78ePt1geQY639K42FwEd+GUyiP/E8YsIgpqRxUXLVpFVfs0Pih4YpfFJ1hO63yDoFiePtRiXcJ/sipbo9iFr0lteaNPpjWjw8fPmwoFCLM7p85YntlnVF8wZ4t6ZZrQI60pYp2D/LIf7XTp8UF/XXIVR7Z4dfMVBxAG4ZlmrYJThcD8+C21HOmCA90TgL4Ux1zYcTB9Brb549PWTC2B5cAMsGjIjRf0XcOnkmj/aiKP8RkrvgmOmn0MzznR/D7QhqFSuaQbgqFuxyyCqUpdyGm1cm/O68xJRnyrTUMfCs1yqSG1NYryQ5d1tcC8JidTMSjuHapVYhwBDu+TJXKCGmxJLglydF5o0UDayJ6UaB905tCRLkD8Yd10X/VocLHbRTTA4bNodWA9uukFT9qqKsMMbVUzV5JhohgcO021oePSxURMSkbBslOCVbIav2Wvt0zfWRk6zke8JulRA2S2hAa+EgaMjhNvyYUjJ5hTWGLPsUHpQBYaSh+q58oMa3cLULAUCPV7EcGhWSpq/+1/GSsoVPIVyM6N8+b1yAJqQmK7QxF9cQbDoUyjaOVEcKXJn0UkjFOMUdoaKQIj98ujsFVD46aHv8DXlyQIw+Eq+YXC7Slah7NlN+uJU1g9FLfUL0yxHlv0zpsAhIhAVIvO934s5XIG1z4RllqUR6vVw9zow+VW0cMbGGRMCha6WnPpY8f3bHm0v7o9QTqdWcoq6uBhmsSH6Jvr+jP09zRTeSg=
+Content-Type: multipart/mixed;
+	boundary="_004_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_"
+MIME-Version: 1.0
+
+--_004_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_
+Content-Type: multipart/alternative;
+	boundary="_000_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_"
+
+--_000_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_
+Content-Type: text/plain; charset="iso-8859-2"
+Content-Transfer-Encoding: quoted-printable
+
+Ahoj Miro,
+
+M=E1me v IS REG z=E1sadn=FD biznis probl=E9m ktor=FD mus=EDme nejako vyrie=
+=B9i=BB pr=E1ve pri tom spracovan=ED d=E1vok VD ako sme sa u=BE v=E8era bav=
+ili. Z=E1le=BEitos=BB rie=B9ime ako urgentn=FA pre nast=E1vaj=FAce UAT.
+
+Popis probl=E9mu:
+
+  *
+Biznis requirement Soci=E1lnej pois=BBovne je na=B9a schopnos=BB vybavi=BB =
+v d=E1vkovom spracovan=ED zhruba 100tis. v=FDstupn=FDch dokumentov denne (E=
+XPECTED).
+     *
+Je to len predpoklad, mo=BEno aj polovica by bola super
+
+     *
+Tie=BE je predpoklad, =BEe tak=FA schopnos=BB m=E1 aj ich aktu=E1lne rie=B9=
+enie (AS-IS).
+
+  *
+V=E8era sme rozoberali =BEe oper=E1cia Registrat=FAry - skr=E1tene Insert, =
+ktor=E1 je k=B5=FA=E8ov=E1 pre toto spracovanie trv=E1 v z=E1klade 3 sekund=
+y a s pe=E8aten=EDm (ktor=E9 =BEia=B5 nem=F4=BEeme vynecha=BB) =EFal=B9=EDc=
+h zhruba 35 sek=FAnd. V re=E1le to b=FDva aj viac, hodnota fluktuje.
+  *
+Ak zr=E1tame aj =EFal=B9ie oper=E1cie ktor=E9 s=FA s=FA=E8as=BBou procesu, =
+zhruba na jedno VD v=FDde 40 sek=FAnd. Je to prive=B5mi optimistick=E1 hodn=
+ota ale pre estim=E1ciu ju =EFalej pou=BEijem ako re=E1lnu.
+     *
+Pre =FAplnos=BB uv=E1dzam, =BEe za ka=BEd=FD VD mus=EDme na IS AR prevola=
+=BB Insert, ResolveRecord a ResolveFile.
+
+  *
+Potrebujeme navrhn=FA=BB, nazvem to strat=E9giu, akou sa s probl=E9mom vysp=
+oriadame, pr=EDpadne kombin=E1ciu viacer=FDch strat=E9gi=ED, preto=BEe pri =
+jednovl=E1knovom spracovan=ED ako si vy=BEadoval je n=E1=B9 v=FDkon v optim=
+istick=FDch podmienkach na =FArovni 2 000 VD denne (ACTUAL).
+
+     *
+V re=E1lnych podmienkach to nebude ani 1000.
+
+Strat=E9gia 1 - Sekven=E8n=E9 spracovanie, redukcia/optimaliz=E1cia n=E1kla=
+dn=FDch =FAkonov
+
+
+  1.
+=AEiadal si d=E1vky spracov=E1va=BB iba v jednom vl=E1kne v sekvencii, =E8i=
+=BEe len jedno spracovanie v =E8ase. =AEiadny paralelizmus.
+  2.
+Predpoklad=E1me =BEe 3 sekundov=FD n=E1klad pri volan=ED pri Inserte sa m=
+=F4=BEe e=B9te zredukova=BB pod 1 sekundu po tom ako sa prostredia prepn=FA=
+ z OpenKM na S3. M=F4=BEe to by=BB pravda?
+  3.
+K=B5=FA=E8ov=FD pre n=E1s je ale =E8as pe=E8atenia, t=FDch 35 sek=FAnd. D=
+=E1 sa tento =E8as nejako e=B9te zredukova=BB?
+     *
+Dnes @Pavel Pavlenda<mailto:pavel.pavlenda@nuaktiv.sk> pris=B5=FAbil =BEe a=
+spo=F2 v z=E1klade prever=ED ako je to s pe=E8aten=EDm a d=E5=BEkou oper=E1=
+cie. K tomu posielam example Insert v pr=EDlohe z dne=B9n=E9ho d=F2a.
+     *
+Zauj=EDmali by aj n=E1s =E8asy ak=E9 viete dosiahnu=BB vo va=B9ich podmienk=
+ach a prostrediach. Z LAB prostredia s=FA odpovede aj cez 40 sek=FAnd.
+        *
+Je tu drobn=E9 podozrenie =BEe =EFal=B9ie spomalenie sp=F4sobuje aj samotn=
+=E1 infra=B9trukt=FAra LAB, alebo =E8as v dni kedy k Insertom doch=E1dza (=
+=E8i=BEe ak sa spracovanie prel=EDna s inou aktivitou v Registrat=FAre).
+
+Strat=E9gia 2 - Paraleln=E9 spracovanie, spracovanie v prehnanom pre=BBa=BE=
+en=ED
+
+
+  1.
+Dnes r=E1no napriek odporu=E8eniu som otestoval vo=E8i registrat=FAre pr=ED=
+pad spracovania 100 VD pou=BEit=EDm 50 vl=E1kien a po necel=FDch 5 min=FAta=
+ch som spracovanie preru=B9il.
+  2.
+Dosiahnut=FD bol v=FDsledok =FAspe=B9n=E9ho vybavenia nad 25 VD.
+  3.
+Ostatn=E9 ktor=E9 u=BE boli za=E8at=E9 mali len odpove=EF ako HTTP error 40=
+3, 500, 503 a 504. Ktor=E9 sa scen=E1r sna=BEil 2x opakova=BB po 10 sekund=
+=E1ch.
+  4.
+Na prv=FD poh=B5ad sa to jav=ED ako ur=E8it=FD n=E1rast na =FArovni 2 a=BE =
+5 n=E1sobku oproti jednovl=E1knu (strat=E9gii 1), z=E1vis=ED to od =EFal=B9=
+=EDch okolnost=ED. V tomto teste ale boli zaznamenan=E9 polovi=E8n=E9 =E8as=
+y be=BEn=E9ho Insertu.
+  5.
+Je tak=FDto pr=EDstup ve=B5mi probl=E9mov=FD pre Registrat=FAru ak by sme h=
+o uplatnili?
+
+Strat=E9gia 3 - Deleg=E1cia riadenia pe=E8atenia bli=BE=B9ie k Registrat=FA=
+re
+
+
+  1.
+Vedeli by sme oper=E1ciu Insert reimplementova=BB tak aby pe=E8atenie nebol=
+o s=FA=E8as=BBou jej synchr=F3nneho behu?
+  2.
+Pre hromadn=E9 spracovanie je k=B5=FA=E8ov=E1 a=BE odpove=EF (potvrdenie o =
+odoslan=ED do eDesk) ktor=E9 pr=EDde asynchr=F3nne nesk=F4r cez EOD. Samotn=
+=FDm Insertom sa pre n=E1s nepotvrdzuje fakt umiestnenia VD do eDesk, =E8i=
+=BEe pre integra=E8n=FD komponent je akceptovate=B5n=E9 ak sa pe=E8atenie u=
+deje a=BE po =FAspe=B9ne odpovedanej Insert oper=E1cii.
+  3.
+To ale predpoklad=E1, =BEe n=E1m zbehn=FA n=E1sledne volan=E9 Resolve oper=
+=E1cie nad z=E1znamom a spisom.
+  4.
+Dalo by sa spracovanie Insert upravi=BB v uvedenom r=E1mci?
+
+Pros=EDm o vyjadrenie aspo=F2 stru=E8ne k zelen=FDm ot=E1zkam. Samozrejme v=
+ych=E1dzam z vlastn=FDch aktu=E1lnych poznatkov, ale sme otvoren=ED ak=FDmk=
+o=B5vek =EFal=B9=EDm mo=BEnostiam ktor=E9 navrhnete.
+
+Roman
+---
+Roman H=D6HER
+[https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628512933339.=
+png] [https://aspecta.sk/wp-content/uploads/2021/08/logo-v-krivkach-160px.p=
+ng]       [https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628=
+512933339.png]         [https://aspecta.sk/wp-content/uploads/2024/10/QR-Ho=
+her-Roman.png]
+[https://aspecta.sk/wp-content/uploads/2021/08/linkedin-mail-signature-1.pn=
+g]<https://www.linkedin.com/company/aspecta-s-r-o/> [https://aspecta.sk/wp-=
+content/uploads/2021/08/fb-mail-signature-1.png] <https://www.facebook.com/=
+aspectasro/>
+[https://aspecta.sk/wp-content/uploads/2021/08/phone-v1.png] +421 905 656 1=
+10
+[https://aspecta.sk/wp-content/uploads/2021/08/filled-message.png] roman.ho=
+her@aspecta.sk<mailto:roman.hoher@aspecta.sk>
+=C8ere=B9=F2ov=E1 28, 917 08 Trnava
+www.aspecta.sk<http://www.aspecta.sk>
+________________________________
+The content of this email is confidential and intended for the recipient sp=
+ecified in message only. It is strictly forbidden to share any part of this=
+ message with any third party, without a written consent of the sender. If =
+you received this message by mistake, please reply to this message and foll=
+ow with its deletion, so that we can ensure such a mistake does not occur i=
+n the future.
+
+
+--_000_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_
+Content-Type: text/html; charset="iso-8859-2"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+2">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+Ahoj Miro,</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+M=E1me v IS REG z=E1sadn=FD biznis probl=E9m ktor=FD mus=EDme nejako vyrie=
+=B9i=BB pr=E1ve pri tom spracovan=ED d=E1vok VD ako sme sa u=BE v=E8era bav=
+ili.
+<u>Z=E1le=BEitos=BB rie=B9ime ako urgentn=FA pre nast=E1vaj=FAce UAT.</u></=
+div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<u>Popis probl=E9mu:</u></div>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Biznis requirement Soci=
+=E1lnej pois=BBovne je na=B9a schopnos=BB vybavi=BB v d=E1vkovom spracovan=
+=ED zhruba
+<b>100tis. v=FDstupn=FDch dokumentov denne (EXPECTED)</b>.</div>
+</li><ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: cir=
+cle;" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Je to len predpoklad, m=
+o=BEno aj polovica by bola super</div>
+</li></ul>
+</ul>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: circle;"=
+ data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Tie=BE je predpoklad, =
+=BEe tak=FA schopnos=BB m=E1 aj ich aktu=E1lne rie=B9enie (AS-IS).</div>
+</li></ul>
+</ul>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">V=E8era sme rozoberali =
+=BEe oper=E1cia Registrat=FAry - skr=E1tene Insert, ktor=E1 je k=B5=FA=E8ov=
+=E1 pre toto spracovanie trv=E1 v z=E1klade 3 sekundy a s pe=E8aten=EDm (kt=
+or=E9 =BEia=B5 nem=F4=BEeme vynecha=BB) =EFal=B9=EDch zhruba 35 sek=FAnd. V=
+ re=E1le to
+ b=FDva aj viac, hodnota fluktuje.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Ak zr=E1tame aj =EFal=
+=B9ie oper=E1cie ktor=E9 s=FA s=FA=E8as=BBou procesu, zhruba na jedno VD v=
+=FDde 40 sek=FAnd. Je to prive=B5mi optimistick=E1 hodnota ale pre estim=E1=
+ciu ju =EFalej pou=BEijem ako re=E1lnu.</div>
+</li><ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: cir=
+cle;" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Pre =FAplnos=BB uv=E1dz=
+am, =BEe za ka=BEd=FD VD mus=EDme na IS AR prevola=BB Insert, ResolveRecord=
+ a ResolveFile.</div>
+</li></ul>
+</ul>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+</ul>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof"><u>Potrebujeme navrhn=
+=FA=BB, nazvem to strat=E9giu, akou sa s probl=E9mom vysporiadame</u>, pr=
+=EDpadne kombin=E1ciu viacer=FDch strat=E9gi=ED, preto=BEe pri jednovl=E1kn=
+ovom spracovan=ED ako si vy=BEadoval je n=E1=B9 v=FDkon v optimistick=FDch
+ podmienkach na =FArovni <b>2 000 VD denne (ACTUAL)</b>.</div>
+</li></ul>
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: disc;" d=
+ata-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<ul style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: circle;"=
+ data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">V re=E1lnych podmienkach to nebude ani 1000.</di=
+v>
+</li></ul>
+</ul>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<u>Strat=E9gia 1</u>&nbsp;- Sekven=E8n=E9 spracovanie, redukcia/optimaliz=
+=E1cia n=E1kladn=FDch =FAkonov</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<ol style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: decimal;=
+" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" start=3D=
+"1">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">=AEiadal si d=E1vky spr=
+acov=E1va=BB iba v jednom vl=E1kne v sekvencii, =E8i=BEe len jedno spracova=
+nie v =E8ase. =AEiadny paralelizmus.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Predpoklad=E1me =BEe 3 =
+sekundov=FD n=E1klad pri&nbsp;volan=ED pri Inserte sa m=F4=BEe e=B9te zredu=
+kova=BB pod 1 sekundu po tom ako sa prostredia prepn=FA z OpenKM na S3.
+<span style=3D"color: rgb(12, 136, 42);">M=F4=BEe to by=BB pravda?</span></=
+div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">K=B5=FA=E8ov=FD pre n=
+=E1s je ale =E8as pe=E8atenia, t=FDch 35 sek=FAnd.
+<span style=3D"color: rgb(12, 136, 42);">D=E1 sa tento =E8as nejako e=B9te =
+zredukova=BB?</span></div>
+</li><ol style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: low=
+er-alpha;" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}"=
+ start=3D"1">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Dnes <a class=3D"tWKOu =
+mention ms-bgc-nlr ms-fcl-b" id=3D"OWAAM806799" href=3D"mailto:pavel.pavlen=
+da@nuaktiv.sk">
+@Pavel Pavlenda</a>&nbsp;pris=B5=FAbil =BEe aspo=F2 v z=E1klade prever=ED a=
+ko je to s pe=E8aten=EDm a d=E5=BEkou oper=E1cie. K tomu posielam example I=
+nsert v pr=EDlohe z dne=B9n=E9ho d=F2a.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Zauj=EDmali by aj n=E1s=
+ =E8asy ak=E9 viete dosiahnu=BB vo va=B9ich podmienkach a prostrediach. Z L=
+AB prostredia s=FA odpovede aj cez 40 sek=FAnd.</div>
+</li><ol style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: low=
+er-roman;" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}"=
+ start=3D"1">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Je tu drobn=E9 podozrenie =BEe =EFal=B9ie spomal=
+enie sp=F4sobuje aj samotn=E1 infra=B9trukt=FAra LAB, alebo =E8as v dni ked=
+y k Insertom doch=E1dza (=E8i=BEe ak sa spracovanie prel=EDna s inou aktivi=
+tou v Registrat=FAre).</div>
+</li></ol>
+</ol>
+</ol>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<div class=3D"elementToProof" id=3D"Signature">
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<u>Strat=E9gia 2</u>&nbsp;- Paraleln=E9 spracovanie, spracovanie v prehnano=
+m pre=BBa=BEen=ED</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+<ol style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: decimal;=
+" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" start=3D=
+"1">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation" class=3D"elementToProof">Dnes r=E1no napriek odp=
+oru=E8eniu som otestoval vo=E8i registrat=FAre pr=EDpad spracovania 100 VD =
+pou=BEit=EDm 50 vl=E1kien a po necel=FDch 5 min=FAtach som spracovanie prer=
+u=B9il.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Dosiahnut=FD bol v=FDsledok =FAspe=B9n=E9ho vyba=
+venia nad 25 VD.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Ostatn=E9 ktor=E9 u=BE boli za=E8at=E9 mali len =
+odpove=EF ako HTTP error 403, 500, 503 a 504. Ktor=E9 sa scen=E1r sna=BEil =
+2x opakova=BB po 10 sekund=E1ch.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Na prv=FD poh=B5ad sa to jav=ED ako ur=E8it=FD n=
+=E1rast na =FArovni 2 a=BE 5 n=E1sobku oproti jednovl=E1knu (strat=E9gii 1)=
+, z=E1vis=ED to od =EFal=B9=EDch okolnost=ED. V tomto teste ale boli zaznam=
+enan=E9 polovi=E8n=E9 =E8asy be=BEn=E9ho Insertu.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(12, 136, 42=
+);">
+<div role=3D"presentation">Je tak=FDto pr=EDstup ve=B5mi probl=E9mov=FD pre=
+ Registrat=FAru ak by sme ho uplatnili?</div>
+</li></ol>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<u>Strat=E9gia 3</u>&nbsp;- Deleg=E1cia riadenia pe=E8atenia bli=BE=B9ie k =
+Registrat=FAre</div>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<ol style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: decimal;=
+" data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" start=3D=
+"1">
+<li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, C=
+alibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Vedeli by sme oper=E1ciu Insert reimplementova=
+=BB tak aby pe=E8atenie nebolo s=FA=E8as=BBou jej synchr=F3nneho behu?</div=
+>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">Pre hromadn=E9 spracovanie je k=B5=FA=E8ov=E1 a=
+=BE odpove=EF (potvrdenie o odoslan=ED do eDesk) ktor=E9 pr=EDde asynchr=F3=
+nne nesk=F4r cez EOD. Samotn=FDm Insertom sa pre n=E1s nepotvrdzuje fakt um=
+iestnenia VD do eDesk, =E8i=BEe pre integra=E8n=FD komponent je akceptovate=
+=B5n=E9
+ ak sa pe=E8atenie udeje a=BE po =FAspe=B9ne odpovedanej Insert oper=E1cii.=
+</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<div role=3D"presentation">To ale predpoklad=E1, =BEe n=E1m zbehn=FA n=E1sl=
+edne volan=E9 Resolve oper=E1cie nad z=E1znamom a spisom.</div>
+</li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontServi=
+ce, Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(12, 136, 42=
+);">
+<div role=3D"presentation">Dalo by sa spracovanie Insert upravi=BB v uveden=
+om r=E1mci?</div>
+</li></ol>
+<p style=3D"text-align: left; text-indent: 0px; margin: 20px;" class=3D"ele=
+mentToProof">
+<span style=3D"font-family: &quot;Times New Roman&quot;; font-size: 12pt; c=
+olor: rgb(0, 0, 0);">Pros=EDm o vyjadrenie aspo=F2 stru=E8ne k zelen=FDm ot=
+=E1zkam. Samozrejme vych=E1dzam z vlastn=FDch aktu=E1lnych poznatkov, ale s=
+me otvoren=ED ak=FDmko=B5vek =EFal=B9=EDm mo=BEnostiam ktor=E9 navrhnete.</=
+span></p>
+<div style=3D"text-align: left; text-indent: 0px; margin: 20px; font-family=
+: &quot;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);" class=
+=3D"elementToProof">
+Roman</div>
+<div style=3D"text-align: left; text-indent: 0px; margin: 20px; font-family=
+: &quot;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);" class=
+=3D"elementToProof">
+---</div>
+<table style=3D"width: 550px; box-sizing: border-box; border-collapse: coll=
+apse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"text-align: left; padding-left: 15px; color: rgb(85, 85, 85); =
+width: 209.271px;">
+<div style=3D"text-align: left; font-family: Constantia, serif; font-size: =
+22px;" class=3D"elementToProof">
+<b>Roman H=D6HER</b></div>
+</td>
+<td style=3D"padding: 6px;" rowspan=3D"2"><span style=3D"font-family: &quot=
+;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);"><img style=
+=3D"height: 100px;" height=3D"100" src=3D"https://aspecta.sk/wp-content/upl=
+oads/2021/07/divider-mail-e1628512933339.png"></span></td>
+<td style=3D"padding-left: 10px; width: 193.729px;"><span style=3D"font-fam=
+ily: &quot;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);"><i=
+mg style=3D"width: 160px;" width=3D"160" src=3D"https://aspecta.sk/wp-conte=
+nt/uploads/2021/08/logo-v-krivkach-160px.png"></span></td>
+<td style=3D"padding: 6px;" rowspan=3D"2"><span style=3D"font-family: &quot=
+;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);"><img style=
+=3D"height: 100px;" height=3D"100" src=3D"https://aspecta.sk/wp-content/upl=
+oads/2021/07/divider-mail-e1628512933339.png"></span></td>
+<td style=3D"text-align: center;" rowspan=3D"2"><span style=3D"font-family:=
+ &quot;Times New Roman&quot;; font-size: 12pt; color: rgb(0, 0, 0);"><img s=
+rc=3D"https://aspecta.sk/wp-content/uploads/2024/10/QR-Hoher-Roman.png"></s=
+pan>
+<div style=3D"text-align: center; font-family: &quot;Times New Roman&quot;;=
+ font-size: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<a style=3D"text-decoration: none;" class=3D"OWAAutoLink" id=3D"OWAfad9c1ca=
+-2060-709f-427d-8efb2b6172a6" href=3D"https://www.linkedin.com/company/aspe=
+cta-s-r-o/"><img style=3D"height: 35px;" height=3D"35" src=3D"https://aspec=
+ta.sk/wp-content/uploads/2021/08/linkedin-mail-signature-1.png"></a>&nbsp;<=
+a style=3D"text-decoration: none;" class=3D"OWAAutoLink" id=3D"OWA79e6813c-=
+6444-6809-92aa-1fb0eb810ba6" href=3D"https://www.facebook.com/aspectasro/">=
+<img style=3D"height: 35px;" height=3D"35" src=3D"https://aspecta.sk/wp-con=
+tent/uploads/2021/08/fb-mail-signature-1.png"></a></div>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align: left; padding-left: 15px; color: rgb(85, 85, 85);"=
+><span style=3D"font-family: Arial, sans-serif; font-size: 12px;"><img styl=
+e=3D"height: 10px; margin: -3px 3px;" height=3D"10" src=3D"https://aspecta.=
+sk/wp-content/uploads/2021/08/phone-v1.png">&nbsp;+421
+ 905 656 110<br>
+<img style=3D"height: 10px; margin: -3px 3px;" height=3D"10" src=3D"https:/=
+/aspecta.sk/wp-content/uploads/2021/08/filled-message.png">&nbsp;<a class=
+=3D"OWAAutoLink" id=3D"OWAe01870a3-e087-ffaf-5539-8c443e5f7bcb" href=3D"mai=
+lto:roman.hoher@aspecta.sk">roman.hoher@aspecta.sk</a></span></td>
+<td style=3D"text-align: left; padding-left: 15px; color: rgb(85, 85, 85);"=
+>
+<div style=3D"text-align: left; font-family: Arial, sans-serif; font-size: =
+12px;" class=3D"elementToProof">
+=C8ere=B9=F2ov=E1 28, 917 08 Trnava<br>
+<a class=3D"OWAAutoLink" id=3D"OWAfb90d5b6-78ad-bd1f-e762-3025bb93ab0f" hre=
+f=3D"http://www.aspecta.sk">www.aspecta.sk</a></div>
+</td>
+</tr>
+<tr>
+<td colspan=3D"5">
+<hr style=3D"margin-top: 30px; border-top: 1px solid rgb(203, 203, 203);">
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 1; color: rgb(203, 203, 203);" colspan=3D"5">
+<div style=3D"line-height: 1; font-family: Arial, sans-serif; font-size: 9p=
+x;" class=3D"elementToProof">
+The content of this email is confidential and intended for the recipient sp=
+ecified in message only. It is strictly forbidden to share any part of this=
+ message with any third party, without a written consent of the sender. If =
+you received this message by mistake,
+ please reply to this message and follow with its deletion, so that we can =
+ensure such a mistake does not occur in the future.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);" clas=
+s=3D"elementToProof">
+<br>
+</div>
+</div>
+</body>
+</html>
+
+--_000_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_--
+
+--_004_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_
+Content-Type: text/plain; name="InsertRegistryRecordOutboundAndProcess.txt"
+Content-Description: InsertRegistryRecordOutboundAndProcess.txt
+Content-Disposition: attachment;
+	filename="InsertRegistryRecordOutboundAndProcess.txt"; size=5943;
+	creation-date="Wed, 18 Mar 2026 10:01:12 GMT";
+	modification-date="Wed, 18 Mar 2026 10:33:28 GMT"
+Content-Transfer-Encoding: base64
+
+VGVudG8gSW5zZXJ0IHRydmFsIA0KDQowNzoxNDo0NyBJTkZPICBbQ29uZmlndXJlQWN0aXZlUmVn
+SW50ZXJjZXB0b3JzU3RlcDo0NV0gKENhbWVsIChjYW1lbC0xMCkgdGhyZWFkICMxMTcgLSBUaHJl
+YWRzKSANCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KUmVx
+dWVzdDogNjhjZDE0NTctYWFmMi00M2VmLWI5Y2ItMTdhM2Y3ZWI4ZjZjDQpFbmRwb2ludDogaHR0
+cHM6Ly9yZWdpc3RyYXR1cmEtYXBpLmxiLmFwcC5sYWIuc3AuZ3I4aXQuY2xvdWQvYXBpL1JlZ2lz
+dHJ5UmVjb3JkL3YxL0luc2VydFJlZ2lzdHJ5UmVjb3JkT3V0Ym91bmRBbmRQcm9jZXNzDQpQYXls
+b2FkOg0Kew0KICAiT3BlcmF0b3IiIDogew0KICAgICJPcGVyYXRvcklEIiA6IDI1OTENCiAgfSwN
+CiAgIlJlZ2lzdHJ5UmVjb3JkRGF0YSIgOiB7DQogICAgIkRhdGVSZWNlaXZlZCIgOiAiMjAyNi0w
+My0xOFQwNzoxNDo0NyIsDQogICAgIlN1YmplY3QiIDogIkpWUCAtIHRlc3QgbWVzc2FnZSIsDQog
+ICAgIlVwdnNGb3JtTmFtZVNwYWNlIiA6ICJodHRwOi8vc2NoZW1hcy5nb3Yuc2svZm9ybS8zMDgw
+NzQ4NC5ocm9tYWRuZV96YXNpZWxhbmllX3Z5c3R1cG55Y2hfZG9rdW1lbnRvdi5zay5ocm9tYWRu
+ZS8xLjAiLA0KICAgICJGb3JtRGF0YSIgOiAiUEVKMWJHdFBkWFJ3ZFhSRWIyTjFiV1Z1ZENCNGJX
+eHVjejBpYUhSMGNEb3ZMM05qYUdWdFlYTXVaMjkyTG5OckwyWnZjbTB2TXpBNE1EYzBPRFF1YUhK
+dmJXRmtibVZmZW1GemFXVnNZVzVwWlY5MmVYTjBkWEJ1ZVdOb1gyUnZhM1Z0Wlc1MGIzWXVjMnN1
+YUhKdmJXRmtibVV2TVM0d0lqNDhaWGgwVFdGemMwUmxZMmx6YVc5dVRuVnRQak0yUEM5bGVIUk5Z
+WE56UkdWamFYTnBiMjVPZFcwK1BHWnZjbTFVZVhCbFBtZGxibEp2ZWp3dlptOXliVlI1Y0dVK1BH
+MWxjM05oWjJWVWVYQmxQa1pwWTNScGIyNDhMMjFsYzNOaFoyVlVlWEJsUGp4dFpYTnpZV2RsUGp4
+bGVIUkVaV05wYzJsdmJrNTFiVDQwTmp3dlpYaDBSR1ZqYVhOcGIyNU9kVzArUEcxbGMzTmhaMlZV
+YVhSc1pUNUtWbEFnTFNCMFpYTjBJRzFsYzNOaFoyVThMMjFsYzNOaFoyVlVhWFJzWlQ0OGJXVnpj
+MkZuWlVSbGMyTnlhWEIwYVc5dVBrcFdVQ0F0SUdkbGJtVnlZWFJsWkNCaVlYUmphRHd2YldWemMy
+Rm5aVVJsYzJOeWFYQjBhVzl1UGp4dFpYTnpZV2RsUkdGMFpUNHlNREkyTFRFd0xUQTFMVEF3T2pB
+eVBDOXRaWE56WVdkbFJHRjBaVDQ4TDIxbGMzTmhaMlUrUEhObGJtUmxjajQ4YzJWdVpHVnlUbUZ0
+WlQ1d2IySnZ4STFyWVNCQ2NtRjBhWE5zWVhaaFBDOXpaVzVrWlhKT1lXMWxQanh6Wlc1a1pYSkNj
+bUZ1WTJoVGRISmxaWFEreEk1aGNtMXZkRzkydzZFZ056d3ZjMlZ1WkdWeVFuSmhibU5vVTNSeVpX
+VjBQanh6Wlc1a1pYSkNjbUZ1WTJoRGFYUjVQbE4yYVc1emE4T3BJSEJoYTI5c3c2SEZvV1U4TDNO
+bGJtUmxja0p5WVc1amFFTnBkSGsrUEhObGJtUmxja0p5WVc1amFGcHBjRDR4TWpNME5Ud3ZjMlZ1
+WkdWeVFuSmhibU5vV21sd1Bqd3ZjMlZ1WkdWeVBqeHlaV05wY0dsbGJuUStQSEpsWTJsd2FXVnVk
+RlI1Y0dVK1JrODhMM0psWTJsd2FXVnVkRlI1Y0dVK1BHNWhiV1UrVFdGeWRHbHVQQzl1WVcxbFBq
+eHpkWEp1WVcxbFBsUnBkR3RoUEM5emRYSnVZVzFsUGp4cFpENDRNekEwTURZeU5qYzVQQzlwWkQ0
+OFlXUmtjbVZ6YzFOMGNtVmxkRDVPWldaaGNtbkRvVzV6YTJFZ09UVTJQQzloWkdSeVpYTnpVM1J5
+WldWMFBqeGhaR1J5WlhOelEybDBlVDVNZGNTTlpXNWxZend2WVdSa2NtVnpjME5wZEhrK1BHRmta
+SEpsYzNOVGRHRjBaVDVUU3p3dllXUmtjbVZ6YzFOMFlYUmxQanhoWkdSeVpYTnpXbWx3UTI5a1pU
+NHlNelExTmp3dllXUmtjbVZ6YzFwcGNFTnZaR1UrUEM5eVpXTnBjR2xsYm5RK1BDOUNkV3hyVDNW
+MGNIVjBSRzlqZFcxbGJuUSsiLA0KICAgICJFeHRlcm5hbENvbnN1bWVyTGlzdCIgOiBbICJJTlRF
+Ry1CQVRDSC1KVlAiIF0sDQogICAgIkV4dGVybmFsUGFyYW1ldGVyTGlzdCIgOiBbIF0NCiAgfSwN
+CiAgIlJlZ2lzdHJ5UmVjb3JkRmlsZXMiIDogWyBdLA0KICAiUmVjaXBpZW50cyIgOiBbIHsNCiAg
+ICAiRURlc2tJRCIgOiAicmM6Ly9zay84MzA0MDYyNjc5X3RpdGthX21hcnRpbiIsDQogICAgIkVk
+ZXNrQ3JlYXRlSWZOb3RGb3VuZCIgOiB0cnVlLA0KICAgICJSZWNpcGllbnRQZXJzb25EYXRhIiA6
+IHsNCiAgICAgICJQZXJzb25hbElETnVtYmVyIiA6ICI4MzA0MDYyNjc5IiwNCiAgICAgICJGaXJz
+dE5hbWUiIDogIk1hcnRpbiIsDQogICAgICAiTGFzdE5hbWUiIDogIlRpdGthIiwNCiAgICAgICJF
+eHRlcm5hbFBhcmFtZXRlckxpc3QiIDogWyBdLA0KICAgICAgIk1hdGNoUGVyc29uT24iIDogew0K
+ICAgICAgICAiUGVyc29uYWxJRE51bWJlckFuZE5hbWVzIiA6IHRydWUsDQogICAgICAgICJEYXRl
+T2ZCaXJ0aEFuZE5hbWVzIiA6IGZhbHNlDQogICAgICB9DQogICAgfSwNCiAgICAiRGVsaXZlcnlN
+ZXRob2RUeXBlIiA6ICJ1cHZzIiwNCiAgICAiRWZvcm1UeXBlIiA6ICJlZGVza19jdXN0b20iLA0K
+ICAgICJTZW5kUmVnaXN0cnlSZWNvcmQiIDogdHJ1ZQ0KICB9IF0sDQogICJQcm9jZXNzaW5nIiA6
+IHsNCiAgICAiQnVzaW5lc3NVbml0IiA6IHsNCiAgICAgICJCdXNpbmVzc1VuaXRJRCIgOiA4MTYN
+CiAgICB9LA0KICAgICJTZW5kaW5nIiA6IHsNCiAgICAgICJTaWduUmVnaXN0cnlSZWNvcmREYXRh
+IiA6IHRydWUNCiAgICB9LA0KICAgICJBZGRpbmdUb1JlZ2lzdHJ5RmlsZSIgOiB7DQogICAgICAi
+TmV3UmVnaXN0cnlGaWxlIiA6IHsNCiAgICAgICAgIkxvY2F0aW9uVHlwZSIgOiAidXNlciIsDQog
+ICAgICAgICJSZWdpc3RyeUZpbGVUeXBlIiA6ICJlbGVjdHJvbmljIiwNCiAgICAgICAgIlJlZ2lz
+dHJ5UGxhbkdyb3VwSUQiIDogMTE1OTgsDQogICAgICAgICJTdWJqZWN0IiA6ICJKVlAgLSB0ZXN0
+IG1lc3NhZ2UiLA0KICAgICAgICAiUmVnaXN0cnlGaWxlVXNlciIgOiB7DQogICAgICAgICAgIlVz
+ZXJJRCIgOiAyNjI2DQogICAgICAgIH0sDQogICAgICAgICJCdXNpbmVzc1VuaXQiIDogew0KICAg
+ICAgICAgICJCdXNpbmVzc1VuaXRJRCIgOiA4MTYNCiAgICAgICAgfSwNCiAgICAgICAgIkV4dGVy
+bmFsUGFyYW1ldGVyTGlzdCIgOiBbIF0NCiAgICAgIH0NCiAgICB9DQogIH0sDQogICJBZ2VuZGFJ
+RCIgOiAyMTgsDQogICJZZWFyQ29kZSIgOiAyMDI2LA0KICAiQ29tcGFueU93bmVySUQiIDogMjQ4
+OTAsDQogICJQcm9jZXNzSUQiIDogIjY4Y2QxNDU3LWFhZjItNDNlZi1iOWNiLTE3YTNmN2ViOGY2
+YyINCn0NCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KDQow
+NzoxNTowNiBJTkZPICBbRXZhbHVhdGVSZXNwb25zZVN0ZXA6NjZdIChDYW1lbCAoY2FtZWwtMTAp
+IHRocmVhZCAjMTE3IC0gVGhyZWFkcykgDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT0NClJlc3BvbnNlOiA2OGNkMTQ1Ny1hYWYyLTQzZWYtYjljYi0xN2EzZjdl
+YjhmNmMNCkhUVFAgU3RhdHVzOiAyMDAgT0sNClBheWxvYWQ6IHsiUmVnaXN0cnlSZWNvcmRzIjpb
+eyJSZWdpc3RyeVJlY29yZElEIjo4NDI5OSwiUmVnaXN0cmF0aW9uTnVtYmVyIjoiMjAyNjAzMTgv
+MDEyIiwiUmVnaXN0cnlSZWNvcmROdW1iZXIiOiJCQU0tMDAwMDIyNC8yMDI2IiwiUmVnaXN0cnlS
+ZWNvcmRQcm9jZXNzTnVtYmVyIjoiMzg1LTEvMjAyNi1CQU0iLCJSZWdpc3RyeUZpbGVJRCI6Mzgz
+ODgsIkxpbmtEZXRhaWwiOiJodHRwczovL3JlZ2lzdHJhdHVyYS5sYi5hcHAubGFiLnNwLmdyOGl0
+LmNsb3VkL0dvVG8uYXNweD90PVJlZ2lzdHJ5UmVjb3JkJlJlZ2lzdHJ5UmVjb3JkSUQ9ODQyOTki
+LCJDb21tZW50cyI6W10sIk91dGJvdW5kTWVzc2FnZSI6eyJNZXNzYWdlSUQiOjc2ODAsIk1lc3Nh
+Z2VDb250YWluZXJTdWJqZWN0IjoiSlZQIC0gdGVzdCBtZXNzYWdlIiwiTWVzc2FnZUNvbnRhaW5l
+clNlbmRlcklEIjoiaWNvOi8vc2svMzA4MDc0ODRfMTAwNzAiLCJNZXNzYWdlQ29udGFpbmVyUmVj
+aXBpZW50SUQiOiJyYzovL3NrLzgzMDQwNjI2NzlfdGl0a2FfbWFydGluIiwiTWVzc2FnZUNvbnRh
+aW5lck1lc3NhZ2VUeXBlIjoiRG9jdW1lbnQiLCJTa1RhbGtNZXNzYWdlSUQiOiIwNzM3NDY0NS02
+MzcwLTQ3NjYtYWRmZC00NzUyNzI0N2QyNmIiLCJTa1RhbGtDb3JyZWxhdGlvbklEIjoiMzU1MjVF
+NjUtNDA1RC00QjM1LUEyNUYtMzg0RDA0NEZBMzY1IiwiU2tUYWxrUmVmZXJlbmNlSUQiOm51bGws
+IlNrVGFsa01lc3NhZ2VDbGFzcyI6IkVHT1ZfRE9DVU1FTlQiLCJGb3JtTmFtZVNwYWNlIjoiaHR0
+cDovL3NjaGVtYXMuZ292LnNrL2Zvcm0vMzA4MDc0ODQuaHJvbWFkbmVfemFzaWVsYW5pZV92eXN0
+dXBueWNoX2Rva3VtZW50b3Yuc2suaHJvbWFkbmUvMS4wIiwiRm9ybSI6IjxCdWxrT3V0cHV0RG9j
+dW1lbnQgeG1sbnM9XCJodHRwOi8vc2NoZW1hcy5nb3Yuc2svZm9ybS8zMDgwNzQ4NC5ocm9tYWRu
+ZV96YXNpZWxhbmllX3Z5c3R1cG55Y2hfZG9rdW1lbnRvdi5zay5ocm9tYWRuZS8xLjBcIj5cbiAg
+PGV4dE1hc3NEZWNpc2lvbk51bT4zNjwvZXh0TWFzc0RlY2lzaW9uTnVtPlxuICA8Zm9ybVR5cGU+
+Z2VuUm96PC9mb3JtVHlwZT5cbiAgPG1lc3NhZ2VUeXBlPkZpY3Rpb248L21lc3NhZ2VUeXBlPlxu
+ICA8bWVzc2FnZT5cbiAgICA8ZXh0RGVjaXNpb25OdW0+NDY8L2V4dERlY2lzaW9uTnVtPlxuICAg
+IDxtZXNzYWdlVGl0bGU+SlZQIC0gdGVzdCBtZXNzYWdlPC9tZXNzYWdlVGl0bGU+XG4gICAgPG1l
+c3NhZ2VEZXNjcmlwdGlvbj5KVlAgLSBnZW5lcmF0ZWQgYmF0Y2g8L21lc3NhZ2VEZXNjcmlwdGlv
+bj5cbiAgICA8bWVzc2FnZURhdGU+MjAyNi0xMC0wNS0wMDowMjwvbWVzc2FnZURhdGU+XG4gIDwv
+bWVzc2FnZT5cbiAgPHNlbmRlcj5cbiAgICA8c2VuZGVyTmFtZT5wb2JvxI1rYSBCcmF0aXNsYXZh
+PC9zZW5kZXJOYW1lPlxuICAgIDxzZW5kZXJCcmFuY2hTdHJlZXQ+xI5hcm1vdG92w6EgNzwvc2Vu
+ZGVyQnJhbmNoU3RyZWV0PlxuICAgIDxzZW5kZXJCcmFuY2hDaXR5PlN2aW5za8OpIHBha29sw6HF
+oWU8L3NlbmRlckJyYW5jaENpdHk+XG4gICAgPHNlbmRlckJyYW5jaFppcD4xMjM0NTwvc2VuZGVy
+QnJhbmNoWmlwPlxuICA8L3NlbmRlcj5cbiAgPHJlY2lwaWVudD5cbiAgICA8cmVjaXBpZW50VHlw
+ZT5GTzwvcmVjaXBpZW50VHlwZT5cbiAgICA8bmFtZT5NYXJ0aW48L25hbWU+XG4gICAgPHN1cm5h
+bWU+VGl0a2E8L3N1cm5hbWU+XG4gICAgPGlkPjgzMDQwNjI2Nzk8L2lkPlxuICAgIDxhZGRyZXNz
+U3RyZWV0Pk5lZmFyacOhbnNrYSA5NTY8L2FkZHJlc3NTdHJlZXQ+XG4gICAgPGFkZHJlc3NDaXR5
+Pkx1xI1lbmVjPC9hZGRyZXNzQ2l0eT5cbiAgICA8YWRkcmVzc1N0YXRlPlNLPC9hZGRyZXNzU3Rh
+dGU+XG4gICAgPGFkZHJlc3NaaXBDb2RlPjIzNDU2PC9hZGRyZXNzWmlwQ29kZT5cbiAgPC9yZWNp
+cGllbnQ+XG48L0J1bGtPdXRwdXREb2N1bWVudD4ifX1dLCJQcm9jZXNzSWQiOiI2OGNkMTQ1Ny1h
+YWYyLTQzZWYtYjljYi0xN2EzZjdlYjhmNmMiLCJTZXJ2aWNlUmVzdWx0Ijp7IlJlc3VsdENvZGUi
+OiIwIiwiUmVzdWx0c01lc3NhZ2UiOiJTdWNjZXNzIiwiRXhjZXB0aW9uIjpudWxsLCJEZXRhaWxz
+IjpbXX19DQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NCg==
+
+--_004_AS8PR03MB10054E2AAA0FEBF3074238137944EAAS8PR03MB10054eu_--

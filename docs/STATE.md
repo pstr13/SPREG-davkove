@@ -3,7 +3,7 @@
 > Posledná aktualizácia: 2026-04-01
 
 ## Jednou vetou
-F-016 + F-017 (oba critical): pečatenie timeout pri 50ks dávkach + race condition (duálne spracovanie záznamu v S312).
+F-016/F-017/F-018: pečatenie timeout + race condition + návrh riešenia na 100K VD/deň (async pečatenie).
 
 ## Čo je hotové
 - GitHub repo vytvorené (pstr13/SPREG-davkove)
@@ -26,6 +26,7 @@ F-016 + F-017 (oba critical): pečatenie timeout pri 50ks dávkach + race condit
 - **F-016 opatrenia**: čaká na review Romanom a implementáciu hotfixov (O-1 až O-3)
 - **F-017 identifikovaný** (2026-04-01) — race condition v S312: duálne spracovanie záznamu, chýba concurrency control
 - **F-017 opatrenia**: hotfix Variant D (1 thread), produkcia Variant A (optimistický locking)
+- **F-018 návrh**: async pečatenie oddelené od Insertu — stratégia na 100K VD/deň
 
 ## Čo blokuje
 - **F-016**: 50ks dávky s pečatením nepoužiteľné kým sa neimplementuje aspoň O-1 (transaction timeout)

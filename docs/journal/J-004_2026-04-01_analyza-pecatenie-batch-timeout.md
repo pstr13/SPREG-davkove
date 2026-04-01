@@ -136,10 +136,38 @@ Prečítané a analyzované:
 
 Kompletný dizajn implementácie vrátane sekvenčného diagramu, testovacieho plánu a rollback plánu je v F-017.
 
+## Analýza 3 — F-018: Návrh riešenia na 100K VD/deň
+
+### Vstup: Mail Romana pre Nuaktiv (18.3.2026)
+
+Tri emaily v `docs/podklady_davky/`:
+1. Originál od Romana pre Nuaktiv (Jurík, Pavlenda, Klučiková)
+2. Reply od Petra ("Dik. Super napísané")
+3. Forward od Romana pre Petra (1.4.2026) — "Treba sa tomu venovať"
+
+### Kľúčové dáta z mailu
+- **Požiadavka SP**: 100K VD/deň
+- **Aktuálny výkon**: ~1-2K VD/deň (jednovlákno)
+- **Insert**: 3s, s pečatením +35s, celkom ~40s per VD
+- **Test 50 vlákien**: 25 OK, zvyšok HTTP 403/500/503/504
+- **Tri stratégie** od Romana: sekvenčné + optimalizácia, paralelné, async pečatenie
+
+### Návrh riešenia
+
+Hlavný princíp: **oddelenie pečatenia od Insertu** (Romanova Stratégia 3).
+
+- Fáza 1 (synchrónna): Insert + Resolve bez pečatenia → ~5s per VD
+- Fáza 2 (asynchrónna): Pečatenie na pozadí → ~35s per VD ale neblokuje
+
+Cieľ: 5 vlákien × Insert 5s = ~57K VD/deň; po S3 migrácii ~96K VD/deň.
+
+5 urgentných otázok pre Nuaktiv v dokumente.
+
 ## Výstupy session
 
 - **F-016** — `docs/findings/F-016_2026-04-01_batch-sealing-timeout-crash.md`
 - **F-017** — `docs/findings/F-017_2026-04-01_s312-race-condition-duplicate-processing.md`
+- **F-018** — `docs/findings/F-018_2026-04-01_navrh-riesenia-vykonnost-davok.md`
 - **STATE.md** aktualizovaný
-- **BREAKDOWN.md** aktualizovaný (2B.9 a 2B.10)
-- Čaká sa na: podklad od Nuaktivu (spracovateľ problém)
+- **BREAKDOWN.md** aktualizovaný (2B.9, 2B.10, 2B.11)
+- Podklady: 3 emaily v `docs/podklady_davky/`

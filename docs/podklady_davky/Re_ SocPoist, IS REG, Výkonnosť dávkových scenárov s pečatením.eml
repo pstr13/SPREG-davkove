@@ -1,0 +1,686 @@
+From: =?utf-8?Q?Peter_Stro=C4=8Dka?= <peter.strocka@aspecta.sk>
+Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3864.400.21\))
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_58D78CFA-D8C6-4A7D-B825-C9632236DFF4"
+X-Priority: 1
+Subject: =?utf-8?B?UmU6IFNvY1BvaXN0LCBJUyBSRUcsIFbDvWtvbm5vc8WlIGTDoXZr?=
+ =?utf-8?B?b3bDvWNoIHNjZW7DoXJvdiBzIHBlxI1hdGVuw61t?=
+Date: Wed, 18 Mar 2026 12:26:40 +0100
+X-Universally-Unique-Identifier: 6C68D8CE-782A-4D74-8292-AA06E57D2D96
+References: <AS8PR03MB10054E2AAA0FEBF3074238137944EA@AS8PR03MB10054.eurprd03.prod.outlook.com>
+To: =?utf-8?Q?Roman_H=C3=B6her?= <roman.hoher@aspecta.sk>
+In-Reply-To: <AS8PR03MB10054E2AAA0FEBF3074238137944EA@AS8PR03MB10054.eurprd03.prod.outlook.com>
+Message-Id: <683F63E8-B77D-47E1-8173-D4B766702E74@aspecta.sk>
+
+
+--Apple-Mail=_58D78CFA-D8C6-4A7D-B825-C9632236DFF4
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+Dik. Super nap=C3=ADsan=C3=A9 :)
+---
+
+Peter STRO=C4=8CKA	 		 	=20
+ <https://www.linkedin.com/company/aspecta-s-r-o/>  =
+<https://www.facebook.com/aspectasro/>
+ +421 905 345 066=20
+ peter.strocka@aspecta.sk	=C4=8Cere=C5=A1=C5=88ov=C3=A1 28, 917 08 =
+Trnava
+www.aspecta.sk <http://www.aspecta.sk/>
+The content of this email is confidential and intended for the recipient =
+specified in message only. It is strictly forbidden to share any part of =
+this message with any third party, without a written consent of the =
+sender. If you received this message by mistake, please reply to this =
+message and follow with its deletion, so that we can ensure such a =
+mistake does not occur in the future.
+
+> D=C5=88a 18.=E2=80=AF3.=E2=80=AF2026 o 11:33, Roman H=C3=B6her =
+<roman.hoher@aspecta.sk> nap=C3=ADsal:
+>=20
+> Ahoj Miro,
+>=20
+> M=C3=A1me v IS REG z=C3=A1sadn=C3=BD biznis probl=C3=A9m ktor=C3=BD =
+mus=C3=ADme nejako vyrie=C5=A1i=C5=A5 pr=C3=A1ve pri tom spracovan=C3=AD =
+d=C3=A1vok VD ako sme sa u=C5=BE v=C4=8Dera bavili. Z=C3=A1le=C5=BEitos=C5=
+=A5 rie=C5=A1ime ako urgentn=C3=BA pre nast=C3=A1vaj=C3=BAce UAT.
+>=20
+> Popis probl=C3=A9mu:
+> Biznis requirement Soci=C3=A1lnej pois=C5=A5ovne je na=C5=A1a =
+schopnos=C5=A5 vybavi=C5=A5 v d=C3=A1vkovom spracovan=C3=AD =
+zhruba100tis. v=C3=BDstupn=C3=BDch dokumentov denne (EXPECTED).
+> Je to len predpoklad, mo=C5=BEno aj polovica by bola super
+> Tie=C5=BE je predpoklad, =C5=BEe tak=C3=BA schopnos=C5=A5 m=C3=A1 aj =
+ich aktu=C3=A1lne rie=C5=A1enie (AS-IS).
+> V=C4=8Dera sme rozoberali =C5=BEe oper=C3=A1cia Registrat=C3=BAry - =
+skr=C3=A1tene Insert, ktor=C3=A1 je k=C4=BE=C3=BA=C4=8Dov=C3=A1 pre toto =
+spracovanie trv=C3=A1 v z=C3=A1klade 3 sekundy a s pe=C4=8Daten=C3=ADm =
+(ktor=C3=A9 =C5=BEia=C4=BE nem=C3=B4=C5=BEeme vynecha=C5=A5) =C4=8Fal=C5=A1=
+=C3=ADch zhruba 35 sek=C3=BAnd. V re=C3=A1le to b=C3=BDva aj viac, =
+hodnota fluktuje.
+> Ak zr=C3=A1tame aj =C4=8Fal=C5=A1ie oper=C3=A1cie ktor=C3=A9 s=C3=BA =
+s=C3=BA=C4=8Das=C5=A5ou procesu, zhruba na jedno VD v=C3=BDde 40 =
+sek=C3=BAnd. Je to prive=C4=BEmi optimistick=C3=A1 hodnota ale pre =
+estim=C3=A1ciu ju =C4=8Falej pou=C5=BEijem ako re=C3=A1lnu.
+> Pre =C3=BAplnos=C5=A5 uv=C3=A1dzam, =C5=BEe za ka=C5=BEd=C3=BD VD =
+mus=C3=ADme na IS AR prevola=C5=A5 Insert, ResolveRecord a ResolveFile.
+> Potrebujeme navrhn=C3=BA=C5=A5, nazvem to strat=C3=A9giu, akou sa s =
+probl=C3=A9mom vysporiadame, pr=C3=ADpadne kombin=C3=A1ciu viacer=C3=BDch =
+strat=C3=A9gi=C3=AD, preto=C5=BEe pri jednovl=C3=A1knovom spracovan=C3=AD =
+ako si vy=C5=BEadoval je n=C3=A1=C5=A1 v=C3=BDkon v optimistick=C3=BDch =
+podmienkach na =C3=BArovni 2 000 VD denne (ACTUAL).
+> V re=C3=A1lnych podmienkach to nebude ani 1000.
+>=20
+> Strat=C3=A9gia 1 - Sekven=C4=8Dn=C3=A9 spracovanie, =
+redukcia/optimaliz=C3=A1cia n=C3=A1kladn=C3=BDch =C3=BAkonov
+>=20
+> =C5=BDiadal si d=C3=A1vky spracov=C3=A1va=C5=A5 iba v jednom vl=C3=A1kne=
+ v sekvencii, =C4=8Di=C5=BEe len jedno spracovanie v =C4=8Dase. =C5=BDiadn=
+y paralelizmus.
+> Predpoklad=C3=A1me =C5=BEe 3 sekundov=C3=BD n=C3=A1klad pri volan=C3=AD =
+pri Inserte sa m=C3=B4=C5=BEe e=C5=A1te zredukova=C5=A5 pod 1 sekundu po =
+tom ako sa prostredia prepn=C3=BA z OpenKM na S3. M=C3=B4=C5=BEe to by=C5=A5=
+ pravda?
+> K=C4=BE=C3=BA=C4=8Dov=C3=BD pre n=C3=A1s je ale =C4=8Das pe=C4=8Datenia,=
+ t=C3=BDch 35 sek=C3=BAnd.D=C3=A1 sa tento =C4=8Das nejako e=C5=A1te =
+zredukova=C5=A5?
+> Dnes @Pavel Pavlenda <mailto:pavel.pavlenda@nuaktiv.sk> pris=C4=BE=C3=BA=
+bil =C5=BEe aspo=C5=88 v z=C3=A1klade prever=C3=AD ako je to s =
+pe=C4=8Daten=C3=ADm a d=C4=BA=C5=BEkou oper=C3=A1cie. K tomu posielam =
+example Insert v pr=C3=ADlohe z dne=C5=A1n=C3=A9ho d=C5=88a.
+> Zauj=C3=ADmali by aj n=C3=A1s =C4=8Dasy ak=C3=A9 viete dosiahnu=C5=A5 =
+vo va=C5=A1ich podmienkach a prostrediach. Z LAB prostredia s=C3=BA =
+odpovede aj cez 40 sek=C3=BAnd.
+> Je tu drobn=C3=A9 podozrenie =C5=BEe =C4=8Fal=C5=A1ie spomalenie =
+sp=C3=B4sobuje aj samotn=C3=A1 infra=C5=A1trukt=C3=BAra LAB, alebo =C4=8Da=
+s v dni kedy k Insertom doch=C3=A1dza (=C4=8Di=C5=BEe ak sa spracovanie =
+prel=C3=ADna s inou aktivitou v Registrat=C3=BAre).
+>=20
+> Strat=C3=A9gia 2 - Paraleln=C3=A9 spracovanie, spracovanie v prehnanom =
+pre=C5=A5a=C5=BEen=C3=AD
+>=20
+> Dnes r=C3=A1no napriek odporu=C4=8Deniu som otestoval vo=C4=8Di =
+registrat=C3=BAre pr=C3=ADpad spracovania 100 VD pou=C5=BEit=C3=ADm 50 =
+vl=C3=A1kien a po necel=C3=BDch 5 min=C3=BAtach som spracovanie =
+preru=C5=A1il.
+> Dosiahnut=C3=BD bol v=C3=BDsledok =C3=BAspe=C5=A1n=C3=A9ho vybavenia =
+nad 25 VD.
+> Ostatn=C3=A9 ktor=C3=A9 u=C5=BE boli za=C4=8Dat=C3=A9 mali len =
+odpove=C4=8F ako HTTP error 403, 500, 503 a 504. Ktor=C3=A9 sa scen=C3=A1r=
+ sna=C5=BEil 2x opakova=C5=A5 po 10 sekund=C3=A1ch.
+> Na prv=C3=BD poh=C4=BEad sa to jav=C3=AD ako ur=C4=8Dit=C3=BD n=C3=A1ras=
+t na =C3=BArovni 2 a=C5=BE 5 n=C3=A1sobku oproti jednovl=C3=A1knu =
+(strat=C3=A9gii 1), z=C3=A1vis=C3=AD to od =C4=8Fal=C5=A1=C3=ADch =
+okolnost=C3=AD. V tomto teste ale boli zaznamenan=C3=A9 polovi=C4=8Dn=C3=A9=
+ =C4=8Dasy be=C5=BEn=C3=A9ho Insertu.
+> Je tak=C3=BDto pr=C3=ADstup ve=C4=BEmi probl=C3=A9mov=C3=BD pre =
+Registrat=C3=BAru ak by sme ho uplatnili?
+>=20
+> Strat=C3=A9gia 3 - Deleg=C3=A1cia riadenia pe=C4=8Datenia bli=C5=BE=C5=A1=
+ie k Registrat=C3=BAre
+>=20
+> Vedeli by sme oper=C3=A1ciu Insert reimplementova=C5=A5 tak aby =
+pe=C4=8Datenie nebolo s=C3=BA=C4=8Das=C5=A5ou jej synchr=C3=B3nneho =
+behu?
+> Pre hromadn=C3=A9 spracovanie je k=C4=BE=C3=BA=C4=8Dov=C3=A1 a=C5=BE =
+odpove=C4=8F (potvrdenie o odoslan=C3=AD do eDesk) ktor=C3=A9 pr=C3=ADde =
+asynchr=C3=B3nne nesk=C3=B4r cez EOD. Samotn=C3=BDm Insertom sa pre n=C3=A1=
+s nepotvrdzuje fakt umiestnenia VD do eDesk, =C4=8Di=C5=BEe pre =
+integra=C4=8Dn=C3=BD komponent je akceptovate=C4=BEn=C3=A9 ak sa =
+pe=C4=8Datenie udeje a=C5=BE po =C3=BAspe=C5=A1ne odpovedanej Insert =
+oper=C3=A1cii.
+> To ale predpoklad=C3=A1, =C5=BEe n=C3=A1m zbehn=C3=BA n=C3=A1sledne =
+volan=C3=A9 Resolve oper=C3=A1cie nad z=C3=A1znamom a spisom.
+> Dalo by sa spracovanie Insert upravi=C5=A5 v uvedenom r=C3=A1mci?
+> Pros=C3=ADm o vyjadrenie aspo=C5=88 stru=C4=8Dne k zelen=C3=BDm =
+ot=C3=A1zkam. Samozrejme vych=C3=A1dzam z vlastn=C3=BDch aktu=C3=A1lnych =
+poznatkov, ale sme otvoren=C3=AD ak=C3=BDmko=C4=BEvek =C4=8Fal=C5=A1=C3=AD=
+m mo=C5=BEnostiam ktor=C3=A9 navrhnete.
+>=20
+> Roman
+> ---
+> Roman H=C3=96HER
+> 		=09
+>  <https://www.linkedin.com/company/aspecta-s-r-o/>  =
+<https://www.facebook.com/aspectasro/>
+>  +421 905 656 110
+>  roman.hoher@aspecta.sk <mailto:roman.hoher@aspecta.sk>=09
+> =C4=8Cere=C5=A1=C5=88ov=C3=A1 28, 917 08 Trnava
+> www.aspecta.sk <http://www.aspecta.sk/>
+> The content of this email is confidential and intended for the =
+recipient specified in message only. It is strictly forbidden to share =
+any part of this message with any third party, without a written consent =
+of the sender. If you received this message by mistake, please reply to =
+this message and follow with its deletion, so that we can ensure such a =
+mistake does not occur in the future.
+>=20
+> <InsertRegistryRecordOutboundAndProcess.txt>
+
+
+--Apple-Mail=_58D78CFA-D8C6-4A7D-B825-C9632236DFF4
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html aria-label=3D"message body"><head><meta http-equiv=3D"content-type" =
+content=3D"text/html; charset=3Dutf-8"></head><body =
+style=3D"overflow-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;">Dik. Super nap=C3=ADsan=C3=A9 :)<br =
+id=3D"lineBreakAtBeginningOfMessage"><div>
+
+ =20
+   =20
+      <meta charset=3D"UTF-8">
+   =20
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+=
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x00=
+23_Editor msdt:dt=3D"string">Erika =
+=EF=BF=BDustekov=EF=BF=BD</mso:display_urn_x003a_schemas-microsoft-com_x00=
+3a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt=3D"string">14200.0000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt=3D"string"></mso:ComplianceAssetId>
+<mso:_ExtendedDescription msdt:dt=3D"string"></mso:_ExtendedDescription>
+<mso:SharedWithUsers msdt:dt=3D"string"></mso:SharedWithUsers>
+=
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x00=
+23_Author msdt:dt=3D"string">Erika =
+=EF=BF=BDustekov=EF=BF=BD</mso:display_urn_x003a_schemas-microsoft-com_x00=
+3a_office_x003a_office_x0023_Author>
+<mso:TriggerFlowInfo msdt:dt=3D"string"></mso:TriggerFlowInfo>
+<mso:ContentTypeId =
+msdt:dt=3D"string">0x010100F4B7542B2C0CD54D831C53EB94E4F1F5</mso:ContentTy=
+peId>
+<mso:_SourceUrl msdt:dt=3D"string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt=3D"string"></mso:_SharedFileIndex>
+<mso:MediaLengthInSeconds msdt:dt=3D"string"></mso:MediaLengthInSeconds>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title>
+   =20
+   =20
+      <p style=3D"margin:20px">---</p>
+
+      <table border=3D"0" cellpadding=3D"0" style=3D"width:550px">
+        <tbody>
+         =20
+          <tr style=3D"height:55px">
+             =20
+              <td style=3D"width:45%; padding:0px 0px 0px 15px; =
+text-align:left; color:#555555; font-family:'Constantia',serif; =
+font-size:22px">
+                      <strong>
+                      Peter STRO=C4=8CKA
+                      </strong>  =20
+              </td>
+
+              <td rowspan=3D"2" style=3D"padding:6px;">
+                    <img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628512=
+933339.png" style=3D"height:100px">
+              </td>
+
+              <td style=3D"width:40%; padding: 0px 0px 0px 10px;">
+                        <img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/logo-v-krivkach-160px=
+.png" style=3D"width:160px"> =20
+              </td>
+
+              <td rowspan=3D"2" style=3D"padding:6px;">
+                        <img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628512=
+933339.png" style=3D"height:100px">
+              </td>
+
+              <td rowspan=3D"2" style=3D"text-align:center;"><img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/strocka-peter.png" =
+style=3D"height:70px;">
+                      =20
+                  <div><a =
+href=3D"https://www.linkedin.com/company/aspecta-s-r-o/" =
+style=3D"text-decoration:none"><img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/linkedin-mail-signatu=
+re-1.png" style=3D"height:35px"></a>
+                       =20
+                  <a href=3D"https://www.facebook.com/aspectasro/" =
+style=3D"text-decoration:none"><img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/fb-mail-signature-1.p=
+ng" style=3D"height:35px"></a>
+              </div></td>
+     =20
+        </tr>
+
+        <tr>
+
+              <td style=3D"padding:0px 0px 0px 15px; text-align:left; =
+color:#555555; font-family:'Arial',sans-serif; font-size:12px;">
+                  <img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/phone-v1.png" =
+style=3D"height:10px; margin:-3px 3px;">&nbsp;+421 905 345 066
+                  <br><img =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/filled-message.png" =
+style=3D"height:10px; margin:-3px 3px;">&nbsp;peter.strocka@aspecta.sk
+              </td>
+
+              <td style=3D"padding:0px 0px 0px 15px; text-align:left; =
+color:#555555; font-family: 'Arial',sans-serif; font-size:12px;">
+                  =C4=8Cere=C5=A1=C5=88ov=C3=A1 28, 917 08 Trnava<br>
+                  <a href=3D"http://www.aspecta.sk">www.aspecta.sk
+                  </a>
+              </td>
+        </tr>
+       =20
+        <tr>
+            <td colspan=3D"5"> <hr style=3D"border-top: 1px solid =
+#cbcbcb; margin-top:30px"></td>
+        </tr>
+       =20
+        <tr>
+            <td colspan=3D"5" style=3D"color:#cbcbcb; font-family: =
+'Arial', sans-serif; font-size:9px; line-height: 1;">The content of this =
+email is confidential and intended for the recipient specified in =
+message only. It is strictly forbidden to share any part of this message =
+with any third party, without a written consent of the sender. If you =
+received this message by mistake, please reply to this message and =
+follow with its deletion, so that we can ensure such a mistake does not =
+occur in the future.
+            </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+</div>
+<div><br><blockquote type=3D"cite"><div>D=C5=88a 18.=E2=80=AF3.=E2=80=AF20=
+26 o 11:33, Roman H=C3=B6her &lt;roman.hoher@aspecta.sk&gt; =
+nap=C3=ADsal:</div><br class=3D"Apple-interchange-newline"><div><meta =
+charset=3D"UTF-8"><div class=3D"elementToProof" style=3D"font-style: =
+normal; font-variant-caps: normal; font-weight: 400; letter-spacing: =
+normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, =
+Helvetica, sans-serif; font-size: 12pt;">Ahoj Miro,</div><div =
+class=3D"elementToProof" style=3D"font-style: normal; font-variant-caps: =
+normal; font-weight: 400; letter-spacing: normal; orphans: 2; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-line: none; text-decoration-thickness: auto; =
+text-decoration-style: solid; font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><br></div><div class=3D"elementToProof" style=3D"font-style: =
+normal; font-variant-caps: normal; font-weight: 400; letter-spacing: =
+normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, =
+Helvetica, sans-serif; font-size: 12pt;">M=C3=A1me v IS REG z=C3=A1sadn=C3=
+=BD biznis probl=C3=A9m ktor=C3=BD mus=C3=ADme nejako vyrie=C5=A1i=C5=A5 =
+pr=C3=A1ve pri tom spracovan=C3=AD d=C3=A1vok VD ako sme sa u=C5=BE =
+v=C4=8Dera bavili.<span =
+class=3D"Apple-converted-space">&nbsp;</span><u>Z=C3=A1le=C5=BEitos=C5=A5 =
+rie=C5=A1ime ako urgentn=C3=BA pre nast=C3=A1vaj=C3=BAce =
+UAT.</u></div><div class=3D"elementToProof" style=3D"font-style: normal; =
+font-variant-caps: normal; font-weight: 400; letter-spacing: normal; =
+orphans: 2; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, =
+Helvetica, sans-serif; font-size: 12pt;"><br></div><div =
+class=3D"elementToProof" style=3D"font-style: normal; font-variant-caps: =
+normal; font-weight: 400; letter-spacing: normal; orphans: 2; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-line: none; text-decoration-thickness: auto; =
+text-decoration-style: solid; font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><u>Popis probl=C3=A9mu:</u></div><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"><li =
+style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt;"><div =
+role=3D"presentation" class=3D"elementToProof">Biznis requirement =
+Soci=C3=A1lnej pois=C5=A5ovne je na=C5=A1a schopnos=C5=A5 vybavi=C5=A5 v =
+d=C3=A1vkovom spracovan=C3=AD zhruba<b>100tis. v=C3=BDstupn=C3=BDch =
+dokumentov denne (EXPECTED)</b>.</div></li><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: =
+circle;"><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation" class=3D"elementToProof">Je to len =
+predpoklad, mo=C5=BEno aj polovica by bola super</div></li></ul></ul><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: =
+circle;"><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation" class=3D"elementToProof">Tie=C5=BE je =
+predpoklad, =C5=BEe tak=C3=BA schopnos=C5=A5 m=C3=A1 aj ich aktu=C3=A1lne =
+rie=C5=A1enie (AS-IS).</div></li></ul></ul><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"><li =
+style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt;"><div =
+role=3D"presentation" class=3D"elementToProof">V=C4=8Dera sme rozoberali =
+=C5=BEe oper=C3=A1cia Registrat=C3=BAry - skr=C3=A1tene Insert, ktor=C3=A1=
+ je k=C4=BE=C3=BA=C4=8Dov=C3=A1 pre toto spracovanie trv=C3=A1 v =
+z=C3=A1klade 3 sekundy a s pe=C4=8Daten=C3=ADm (ktor=C3=A9 =C5=BEia=C4=BE =
+nem=C3=B4=C5=BEeme vynecha=C5=A5) =C4=8Fal=C5=A1=C3=ADch zhruba 35 =
+sek=C3=BAnd. V re=C3=A1le to b=C3=BDva aj viac, hodnota =
+fluktuje.</div></li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation" class=3D"elementToProof">Ak zr=C3=A1tame=
+ aj =C4=8Fal=C5=A1ie oper=C3=A1cie ktor=C3=A9 s=C3=BA s=C3=BA=C4=8Das=C5=A5=
+ou procesu, zhruba na jedno VD v=C3=BDde 40 sek=C3=BAnd. Je to prive=C4=BE=
+mi optimistick=C3=A1 hodnota ale pre estim=C3=A1ciu ju =C4=8Falej =
+pou=C5=BEijem ako re=C3=A1lnu.</div></li><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: =
+circle;"><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation" class=3D"elementToProof">Pre =C3=BAplnos=
+=C5=A5 uv=C3=A1dzam, =C5=BEe za ka=C5=BEd=C3=BD VD mus=C3=ADme na IS AR =
+prevola=C5=A5 Insert, ResolveRecord a =
+ResolveFile.</div></li></ul></ul><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"></ul><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"><li =
+style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt;"><div =
+role=3D"presentation" class=3D"elementToProof"><u>Potrebujeme =
+navrhn=C3=BA=C5=A5, nazvem to strat=C3=A9giu, akou sa s probl=C3=A9mom =
+vysporiadame</u>, pr=C3=ADpadne kombin=C3=A1ciu viacer=C3=BDch =
+strat=C3=A9gi=C3=AD, preto=C5=BEe pri jednovl=C3=A1knovom spracovan=C3=AD =
+ako si vy=C5=BEadoval je n=C3=A1=C5=A1 v=C3=BDkon v optimistick=C3=BDch =
+podmienkach na =C3=BArovni<span =
+class=3D"Apple-converted-space">&nbsp;</span><b>2 000 VD denne =
+(ACTUAL)</b>.</div></li></ul><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: disc;"><ul =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+style=3D"margin-top: 0px; margin-bottom: 0px; list-style-type: =
+circle;"><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation">V re=C3=A1lnych podmienkach to nebude =
+ani 1000.</div></li></ul></ul><div style=3D"font-style: normal; =
+font-variant-caps: normal; font-weight: 400; letter-spacing: normal; =
+orphans: 2; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, =
+Helvetica, sans-serif; font-size: 12pt;"><br></div><div =
+class=3D"elementToProof" style=3D"font-style: normal; font-variant-caps: =
+normal; font-weight: 400; letter-spacing: normal; orphans: 2; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-line: none; text-decoration-thickness: auto; =
+text-decoration-style: solid; font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><u>Strat=C3=A9gia 1</u>&nbsp;- Sekven=C4=8Dn=C3=A9 spracovanie, =
+redukcia/optimaliz=C3=A1cia n=C3=A1kladn=C3=BDch =C3=BAkonov</div><div =
+style=3D"font-style: normal; font-variant-caps: normal; font-weight: =
+400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: =
+0px; text-transform: none; white-space: normal; widows: 2; word-spacing: =
+0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid; =
+font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, =
+Helvetica, sans-serif; font-size: 12pt;"><br></div><ol =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+start=3D"1" style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; =
+font-size: 12px; font-style: normal; font-variant-caps: normal; =
+font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; =
+text-indent: 0px; text-transform: none; white-space: normal; widows: 2; =
+word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: =
+none; text-decoration-thickness: auto; text-decoration-style: solid; =
+margin-top: 0px; margin-bottom: 0px; list-style-type: decimal;"><li =
+style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt;"><div =
+role=3D"presentation" class=3D"elementToProof">=C5=BDiadal si d=C3=A1vky =
+spracov=C3=A1va=C5=A5 iba v jednom vl=C3=A1kne v sekvencii, =C4=8Di=C5=BEe=
+ len jedno spracovanie v =C4=8Dase. =C5=BDiadny =
+paralelizmus.</div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation" =
+class=3D"elementToProof">Predpoklad=C3=A1me =C5=BEe 3 sekundov=C3=BD =
+n=C3=A1klad pri&nbsp;volan=C3=AD pri Inserte sa m=C3=B4=C5=BEe e=C5=A1te =
+zredukova=C5=A5 pod 1 sekundu po tom ako sa prostredia prepn=C3=BA z =
+OpenKM na S3.<span class=3D"Apple-converted-space">&nbsp;</span><span =
+style=3D"color: rgb(12, 136, 42);">M=C3=B4=C5=BEe to by=C5=A5 =
+pravda?</span></div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation" =
+class=3D"elementToProof">K=C4=BE=C3=BA=C4=8Dov=C3=BD pre n=C3=A1s je ale =
+=C4=8Das pe=C4=8Datenia, t=C3=BDch 35 sek=C3=BAnd.<span style=3D"color: =
+rgb(12, 136, 42);">D=C3=A1 sa tento =C4=8Das nejako e=C5=A1te =
+zredukova=C5=A5?</span></div></li><ol =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+start=3D"1" style=3D"margin-top: 0px; margin-bottom: 0px; =
+list-style-type: lower-alpha;"><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation" =
+class=3D"elementToProof">Dnes<span =
+class=3D"Apple-converted-space">&nbsp;</span><a class=3D"tWKOu mention =
+ms-bgc-nlr ms-fcl-b" id=3D"OWAAM806799" =
+href=3D"mailto:pavel.pavlenda@nuaktiv.sk">@Pavel =
+Pavlenda</a>&nbsp;pris=C4=BE=C3=BAbil =C5=BEe aspo=C5=88 v z=C3=A1klade =
+prever=C3=AD ako je to s pe=C4=8Daten=C3=ADm a d=C4=BA=C5=BEkou =
+oper=C3=A1cie. K tomu posielam example Insert v pr=C3=ADlohe z =
+dne=C5=A1n=C3=A9ho d=C5=88a.</div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation" =
+class=3D"elementToProof">Zauj=C3=ADmali by aj n=C3=A1s =C4=8Dasy ak=C3=A9 =
+viete dosiahnu=C5=A5 vo va=C5=A1ich podmienkach a prostrediach. Z LAB =
+prostredia s=C3=BA odpovede aj cez 40 sek=C3=BAnd.</div></li><ol =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+start=3D"1" style=3D"margin-top: 0px; margin-bottom: 0px; =
+list-style-type: lower-roman;"><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation">Je tu drobn=C3=A9 =
+podozrenie =C5=BEe =C4=8Fal=C5=A1ie spomalenie sp=C3=B4sobuje aj =
+samotn=C3=A1 infra=C5=A1trukt=C3=BAra LAB, alebo =C4=8Das v dni kedy k =
+Insertom doch=C3=A1dza (=C4=8Di=C5=BEe ak sa spracovanie prel=C3=ADna s =
+inou aktivitou v Registrat=C3=BAre).</div></li></ol></ol></ol><div =
+class=3D"elementToProof" style=3D"font-style: normal; font-variant-caps: =
+normal; font-weight: 400; letter-spacing: normal; orphans: 2; =
+text-align: start; text-indent: 0px; text-transform: none; white-space: =
+normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-line: none; text-decoration-thickness: auto; =
+text-decoration-style: solid; font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><br></div><div class=3D"elementToProof" id=3D"Signature" =
+style=3D"caret-color: rgb(0, 0, 0); font-family: Helvetica; font-size: =
+12px; font-style: normal; font-variant-caps: normal; font-weight: 400; =
+letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-text-stroke-width: 0px; text-decoration-line: none; =
+text-decoration-thickness: auto; text-decoration-style: solid;"><div =
+class=3D"elementToProof" style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><u>Strat=C3=A9gia 2</u>&nbsp;- Paraleln=C3=A9 =
+spracovanie, spracovanie v prehnanom pre=C5=A5a=C5=BEen=C3=AD</div><div =
+class=3D"elementToProof" style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><br></div><ol =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+start=3D"1" style=3D"margin-top: 0px; margin-bottom: 0px; =
+list-style-type: decimal;"><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation" class=3D"elementToProof">Dnes=
+ r=C3=A1no napriek odporu=C4=8Deniu som otestoval vo=C4=8Di =
+registrat=C3=BAre pr=C3=ADpad spracovania 100 VD pou=C5=BEit=C3=ADm 50 =
+vl=C3=A1kien a po necel=C3=BDch 5 min=C3=BAtach som spracovanie =
+preru=C5=A1il.</div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation">Dosiahnut=C3=BD bol =
+v=C3=BDsledok =C3=BAspe=C5=A1n=C3=A9ho vybavenia nad 25 =
+VD.</div></li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: =
+12pt;"><div role=3D"presentation">Ostatn=C3=A9 ktor=C3=A9 u=C5=BE boli =
+za=C4=8Dat=C3=A9 mali len odpove=C4=8F ako HTTP error 403, 500, 503 a =
+504. Ktor=C3=A9 sa scen=C3=A1r sna=C5=BEil 2x opakova=C5=A5 po 10 =
+sekund=C3=A1ch.</div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation">Na prv=C3=BD poh=C4=BEad sa =
+to jav=C3=AD ako ur=C4=8Dit=C3=BD n=C3=A1rast na =C3=BArovni 2 a=C5=BE 5 =
+n=C3=A1sobku oproti jednovl=C3=A1knu (strat=C3=A9gii 1), z=C3=A1vis=C3=AD =
+to od =C4=8Fal=C5=A1=C3=ADch okolnost=C3=AD. V tomto teste ale boli =
+zaznamenan=C3=A9 polovi=C4=8Dn=C3=A9 =C4=8Dasy be=C5=BEn=C3=A9ho =
+Insertu.</div></li><li style=3D"font-family: Aptos, Aptos_EmbeddedFont, =
+Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; =
+color: rgb(12, 136, 42);"><div role=3D"presentation">Je tak=C3=BDto =
+pr=C3=ADstup ve=C4=BEmi probl=C3=A9mov=C3=BD pre Registrat=C3=BAru ak by =
+sme ho uplatnili?</div></li></ol><div style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><br></div><div style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><u>Strat=C3=A9gia 3</u>&nbsp;- Deleg=C3=A1cia riadenia =
+pe=C4=8Datenia bli=C5=BE=C5=A1ie k Registrat=C3=BAre</div><div =
+style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, =
+Calibri, Helvetica, sans-serif; font-size: 12pt;"><br></div><ol =
+data-editing-info=3D"{&quot;applyListStyleFromLevel&quot;:true}" =
+start=3D"1" style=3D"margin-top: 0px; margin-bottom: 0px; =
+list-style-type: decimal;"><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation">Vedeli by sme oper=C3=A1ciu =
+Insert reimplementova=C5=A5 tak aby pe=C4=8Datenie nebolo s=C3=BA=C4=8Das=C5=
+=A5ou jej synchr=C3=B3nneho behu?</div></li><li style=3D"font-family: =
+Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, =
+sans-serif; font-size: 12pt;"><div role=3D"presentation">Pre hromadn=C3=A9=
+ spracovanie je k=C4=BE=C3=BA=C4=8Dov=C3=A1 a=C5=BE odpove=C4=8F =
+(potvrdenie o odoslan=C3=AD do eDesk) ktor=C3=A9 pr=C3=ADde asynchr=C3=B3n=
+ne nesk=C3=B4r cez EOD. Samotn=C3=BDm Insertom sa pre n=C3=A1s =
+nepotvrdzuje fakt umiestnenia VD do eDesk, =C4=8Di=C5=BEe pre =
+integra=C4=8Dn=C3=BD komponent je akceptovate=C4=BEn=C3=A9 ak sa =
+pe=C4=8Datenie udeje a=C5=BE po =C3=BAspe=C5=A1ne odpovedanej Insert =
+oper=C3=A1cii.</div></li><li style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><div role=3D"presentation">To ale predpoklad=C3=A1, =
+=C5=BEe n=C3=A1m zbehn=C3=BA n=C3=A1sledne volan=C3=A9 Resolve oper=C3=A1c=
+ie nad z=C3=A1znamom a spisom.</div></li><li style=3D"font-family: =
+Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, =
+sans-serif; font-size: 12pt; color: rgb(12, 136, 42);"><div =
+role=3D"presentation">Dalo by sa spracovanie Insert upravi=C5=A5 v =
+uvedenom r=C3=A1mci?</div></li></ol><p class=3D"elementToProof" =
+style=3D"margin: 20px; text-align: left; text-indent: 0px;"><span =
+style=3D"font-family: &quot;Times New Roman&quot;; font-size: =
+12pt;">Pros=C3=ADm o vyjadrenie aspo=C5=88 stru=C4=8Dne k zelen=C3=BDm =
+ot=C3=A1zkam. Samozrejme vych=C3=A1dzam z vlastn=C3=BDch aktu=C3=A1lnych =
+poznatkov, ale sme otvoren=C3=AD ak=C3=BDmko=C4=BEvek =C4=8Fal=C5=A1=C3=AD=
+m mo=C5=BEnostiam ktor=C3=A9 navrhnete.</span></p><div =
+class=3D"elementToProof" style=3D"text-align: left; text-indent: 0px; =
+margin: 20px; font-family: &quot;Times New Roman&quot;; font-size: =
+12pt;">Roman</div><div class=3D"elementToProof" style=3D"text-align: =
+left; text-indent: 0px; margin: 20px; font-family: &quot;Times New =
+Roman&quot;; font-size: 12pt;">---</div><table style=3D"width: 550px; =
+box-sizing: border-box; border-collapse: collapse; border-spacing: =
+0px;"><tbody><tr><td style=3D"text-align: left; padding-left: 15px; =
+color: rgb(85, 85, 85); width: 209.271px;"><div class=3D"elementToProof" =
+style=3D"text-align: left; font-family: Constantia, serif; font-size: =
+22px;"><b>Roman H=C3=96HER</b></div></td><td rowspan=3D"2" =
+style=3D"padding: 6px;"><span style=3D"font-family: &quot;Times New =
+Roman&quot;; font-size: 12pt;"><img height=3D"100" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628512=
+933339.png" style=3D"height: 100px;"></span></td><td =
+style=3D"padding-left: 10px; width: 193.729px;"><span =
+style=3D"font-family: &quot;Times New Roman&quot;; font-size: =
+12pt;"><img width=3D"160" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/logo-v-krivkach-160px=
+.png" style=3D"width: 160px;"></span></td><td rowspan=3D"2" =
+style=3D"padding: 6px;"><span style=3D"font-family: &quot;Times New =
+Roman&quot;; font-size: 12pt;"><img height=3D"100" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/07/divider-mail-e1628512=
+933339.png" style=3D"height: 100px;"></span></td><td rowspan=3D"2" =
+style=3D"text-align: center;"><span style=3D"font-family: &quot;Times =
+New Roman&quot;; font-size: 12pt;"><img =
+src=3D"https://aspecta.sk/wp-content/uploads/2024/10/QR-Hoher-Roman.png"><=
+/span><div class=3D"elementToProof" style=3D"text-align: center; =
+font-family: &quot;Times New Roman&quot;; font-size: 12pt;"><a =
+class=3D"OWAAutoLink" id=3D"OWAfad9c1ca-2060-709f-427d-8efb2b6172a6" =
+href=3D"https://www.linkedin.com/company/aspecta-s-r-o/" =
+style=3D"text-decoration: none;"><img height=3D"35" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/linkedin-mail-signatu=
+re-1.png" style=3D"height: 35px;"></a>&nbsp;<a class=3D"OWAAutoLink" =
+id=3D"OWA79e6813c-6444-6809-92aa-1fb0eb810ba6" =
+href=3D"https://www.facebook.com/aspectasro/" style=3D"text-decoration: =
+none;"><img height=3D"35" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/fb-mail-signature-1.p=
+ng" style=3D"height: 35px;"></a></div></td></tr><tr><td =
+style=3D"text-align: left; padding-left: 15px; color: rgb(85, 85, =
+85);"><span style=3D"font-family: Arial, sans-serif; font-size: =
+12px;"><img height=3D"10" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/phone-v1.png" =
+style=3D"height: 10px; margin: -3px 3px;">&nbsp;+421 905 656 110<br><img =
+height=3D"10" =
+src=3D"https://aspecta.sk/wp-content/uploads/2021/08/filled-message.png" =
+style=3D"height: 10px; margin: -3px 3px;">&nbsp;<a class=3D"OWAAutoLink" =
+id=3D"OWAe01870a3-e087-ffaf-5539-8c443e5f7bcb" =
+href=3D"mailto:roman.hoher@aspecta.sk">roman.hoher@aspecta.sk</a></span></=
+td><td style=3D"text-align: left; padding-left: 15px; color: rgb(85, 85, =
+85);"><div class=3D"elementToProof" style=3D"text-align: left; =
+font-family: Arial, sans-serif; font-size: 12px;">=C4=8Cere=C5=A1=C5=88ov=C3=
+=A1 28, 917 08 Trnava<br><a class=3D"OWAAutoLink" =
+id=3D"OWAfb90d5b6-78ad-bd1f-e762-3025bb93ab0f" =
+href=3D"http://www.aspecta.sk/">www.aspecta.sk</a></div></td></tr><tr><td =
+colspan=3D"5"><hr style=3D"margin-top: 30px; border-top-width: 1px; =
+border-top-style: solid; border-top-color: rgb(203, 203, =
+203);"></td></tr><tr><td colspan=3D"5" style=3D"line-height: 1; color: =
+rgb(203, 203, 203);"><div class=3D"elementToProof" style=3D"line-height: =
+1; font-family: Arial, sans-serif; font-size: 9px;">The content of this =
+email is confidential and intended for the recipient specified in =
+message only. It is strictly forbidden to share any part of this message =
+with any third party, without a written consent of the sender. If you =
+received this message by mistake, please reply to this message and =
+follow with its deletion, so that we can ensure such a mistake does not =
+occur in the future.</div></td></tr></tbody></table><div =
+class=3D"elementToProof" style=3D"font-family: Aptos, =
+Aptos_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; =
+font-size: 12pt;"><br></div></div><span =
+id=3D"cid:3EC00A69-4911-4262-AD13-BC29002AC925">&lt;InsertRegistryRecordOu=
+tboundAndProcess.txt&gt;</span></div></blockquote></div><br></body></html>=
+
+--Apple-Mail=_58D78CFA-D8C6-4A7D-B825-C9632236DFF4--
