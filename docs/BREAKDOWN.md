@@ -46,6 +46,7 @@ Findingy F-001 až F-008 sú z JVP-nedoplatky — neaplikovateľné priamo na pr
 | 2B.7 | Chýbajúci retry/deadletter (F-005 z JVP) | **needs re-eval** | F-005? |
 | 2B.8 | Camel threading model — concurrent routes | **needs analysis** | Q-001 |
 | 2B.9 | **Pečatenie pri 50ks dávkach → timeout a pád** | **identified** | F-016 |
+| 2B.10 | **Race condition — duálne spracovanie toho istého záznamu** | **identified** | F-017 |
 
 ### 2C — Scenario38ImportCSV
 

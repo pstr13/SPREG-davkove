@@ -43,8 +43,22 @@ Analyzované zdrojové kódy (registratura-services-integration + batch-services
 - Navrhnuté 8 opatrení (3 okamžité, 3 strednodobé, 2 dlhodobé)
 - Korelácia 5 bugov s finding F-016
 
+## Druhá analýza — F-017: Race condition v S312
+
+Roman potvrdil symptóm: duálne spracovanie toho istého záznamu výstupných dokumentov v S312. Jeden uspeje, druhý neuspeje, vzájomne si prepíšu výsledok.
+
+Analýza kódu odhalila **úplnú absenciu concurrency control**:
+- Žiadny `@Version` (optimistický locking) na entitách
+- Žiadny `SELECT FOR UPDATE` (pesimistický locking) v batch queries
+- Žiadna deduplikácia pri `split()` + paralelnom spracovaní
+
+Navrhnuté 4 varianty riešenia, odporúčaný: **Variant A (optimistický locking)** — `@Version` na EntityBase + ALTER TABLE + ošetrenie OptimisticLockException.
+
+Pravdepodobne zodpovedá za SPISREG-2690 (MEGA BUG).
+
 ## Poznámky
 
-Dva oddelené problémy:
-1. **Pečatenie + timeout** (F-016) — SPISREG-2688, 2695, 1517, 2690
-2. **Nedotiahnutý spracovateľ / Nuaktiv** — SPISREG-2394, 2422, 2423, 2428 — Roman rieši s p. Pavlendom, oddelené od pečatenia
+Tri oddelené problémy:
+1. **Pečatenie + timeout** (F-016) — SPISREG-2688, 2695, 1517
+2. **Race condition / duálne spracovanie** (F-017) — SPISREG-2690 (MEGA BUG)
+3. **Nedotiahnutý spracovateľ / Nuaktiv** — SPISREG-2394, 2422, 2423, 2428 — Roman rieši s p. Pavlendom, oddelené
