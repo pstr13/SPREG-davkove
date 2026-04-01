@@ -1,6 +1,6 @@
 # STAV
 
-> Posledná aktualizácia: 2026-03-31
+> Posledná aktualizácia: 2026-04-01
 
 ## Jednou vetou
 F-010 opravený v commit eabc3f5 — potvrdzuje reálnosť nájdených bugov; 5 otvorených findingov čaká verifikáciu.
@@ -20,7 +20,7 @@ F-010 opravený v commit eabc3f5 — potvrdzuje reálnosť nájdených bugov; 5 
 
 ## Čo je rozpracované
 - Verifikácia F-009 až F-014 Romanom
-- Re-evaluácia F-001 až F-008 voči batch-services-integration kódu
+- F-001, F-002, F-003 odstránené (D-001) — boli z JVP repo, netýkajú sa S311/S312/S38
 - S312CloseBatchWhenReadyStep @ApplicationScoped — investigate
 
 ## Čo blokuje
@@ -31,7 +31,7 @@ F-010 opravený v commit eabc3f5 — potvrdzuje reálnosť nájdených bugov; 5 
 2. **Roman**: Overiť F-010 (S38 nested filter — pozrieť DB: existujú "zombie" S38Batch?)
 3. **Roman**: Overiť F-012 (príloha — čo robí IS AR pri vynechanej prílohe?)
 4. **Roman**: Overiť F-014 (double write — pozrieť DB: failedAttempts > maximumRetries?)
-5. Rozhodnutie: archivovať F-001 až F-008 (JVP repo) alebo remapovať?
+5. F-004 až F-008 (JVP repo, bez súborov) — zvážiť re-evaluáciu alebo definitívne uzavrieť
 
 ## Zdravie
 🔴 kritické findingy identifikované, čaká verifikácia

@@ -13,5 +13,5 @@
 - Priorita: vysoká
 
 ### Q-003 — Boli UNIDENTIFIED_PERSON / UNCOMPLETE_DATA scenáre testované v UAT?
-- Kontext: F-002 potvrdzuje crash pri týchto odpovediach, ale UAT logy ich neobsahujú.
-- Priorita: vysoká
+- Kontext: UAT logy (TEST-528, 531, 535, 536) neobsahujú tieto odpovede. Je otázka, či batch-services-integration tieto stavové kódy správne ošetruje pri S312 spracovaní.
+- Priorita: stredná

@@ -12,13 +12,16 @@ Fáza 1 (J-001) analyzovala repo **JVP-nedoplatky** (pomocný zdroj).
 Fáza 2+ analyzuje **batch-services-integration** (produkčný kód v UAT).
 Findingy F-001 až F-008 sú z JVP-nedoplatky — neaplikovateľné priamo na produkčný kód.
 
-## Fáza 1 — Analýza JVP-nedoplatky (ARCHIVOVANÁ)
+## Fáza 1 — Analýza JVP-nedoplatky (ARCHIVOVANÁ — FINDINGY ODSTRÁNENÉ)
+
+> Findingy F-001, F-002, F-003 boli odstránené rozhodnutím D-001 (2026-04-01).
+> Dôvod: analyzovaný kód (Scenario351Notify, Scenario352Debt) neexistuje v produkčnom batch-services-integration repo — nie sú relevantné pre S311/S312/S38.
 
 | # | Úloha | Status | Finding |
 |---|-------|--------|---------|
-| 1.1 | Overiť data corruption bug (Scenario351Notify:165) | **confirmed** (z JVP repo) | F-001 |
-| 1.2 | Overiť NullPointer v GenerateXmlFormBean | **confirmed** (z JVP repo) | F-002 |
-| 1.3 | Overiť type-unsafe list access v Scenario352Debt:162 | **confirmed** (z JVP repo) | F-003 |
+| 1.1 | Overiť data corruption bug (Scenario351Notify:165) | **removed** (D-001) | — |
+| 1.2 | Overiť NullPointer v GenerateXmlFormBean | **removed** (D-001) | — |
+| 1.3 | Overiť type-unsafe list access v Scenario352Debt:162 | **removed** (D-001) | — |
 
 ## Fáza 2 — Analýza batch-services-integration (AKTUÁLNA)
 
