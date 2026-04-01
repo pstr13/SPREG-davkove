@@ -3,7 +3,7 @@
 > Posledná aktualizácia: 2026-04-01
 
 ## Jednou vetou
-F-016 (critical): pečatenie pri 50ks dávkach spôsobuje timeout a pád — navrhnuté okamžité opatrenia.
+F-016 + F-017 (oba critical): pečatenie timeout pri 50ks dávkach + race condition (duálne spracovanie záznamu v S312).
 
 ## Čo je hotové
 - GitHub repo vytvorené (pstr13/SPREG-davkove)
@@ -24,18 +24,21 @@ F-016 (critical): pečatenie pri 50ks dávkach spôsobuje timeout a pád — nav
 - F-001, F-002, F-003 odstránené (D-001) — boli z JVP repo, netýkajú sa S311/S312/S38
 - S312CloseBatchWhenReadyStep @ApplicationScoped — investigate
 - **F-016 opatrenia**: čaká na review Romanom a implementáciu hotfixov (O-1 až O-3)
+- **F-017 identifikovaný** (2026-04-01) — race condition v S312: duálne spracovanie záznamu, chýba concurrency control
+- **F-017 opatrenia**: hotfix Variant D (1 thread), produkcia Variant A (optimistický locking)
 
 ## Čo blokuje
 - **F-016**: 50ks dávky s pečatením nepoužiteľné kým sa neimplementuje aspoň O-1 (transaction timeout)
+- **F-017**: Race condition v S312 — duálne spracovanie záznamov, MEGA BUG (SPISREG-2690)
 - Milady pozastavila JVP 50+ dávky do opravy bugov
 
 ## Čo ďalej
-1. **Roman (URGENTNÉ)**: Implementovať O-1 (zvýšiť transaction timeout) — najrýchlejší hotfix
-2. **Roman**: Overiť O-2 (connection pool) a O-3 (znížiť veľkosť dávky) ako doplnkové opatrenia
-3. **Roman**: Skontrolovať logy z pádu 50ks dávky — potvrdiť TransactionTimeout/RollbackException
-4. **Roman**: Overiť F-009 (onException scope)
-5. **Roman**: Overiť F-014 (double JPA write) — súvisí s SPISREG-2690 (MEGA BUG)?
-6. **Roman**: Nuaktiv problém (spracovateľ) — SPISREG-2394/2422/2423/2428, spolupráca s p. Pavlendom
+1. **Roman (URGENTNÉ)**: F-017 hotfix — znížiť thready na 1 (Variant D) pre S312, eliminuje race condition
+2. **Roman (URGENTNÉ)**: F-016 hotfix — zvýšiť transaction timeout (O-1), connection pool (O-2)
+3. **Roman**: F-017 produkčný fix — implementovať Variant A (optimistický locking: @Version + ALTER TABLE)
+4. **Roman**: Skontrolovať logy z pádu 50ks dávky — potvrdiť TransactionTimeout/RollbackException
+5. **Roman**: Overiť F-009 (onException scope)
+6. **Roman**: Nuaktiv problém (spracovateľ) — SPISREG-2394/2422/2423/2428, čaká sa na podklad od Nuaktivu
 
 ## Prehľad bugov od Milady (2026-04-01)
 

@@ -6,59 +6,140 @@ status: draft
 author: roman
 ---
 
-# J-004 — Analýza: Pečatenie pri 50ks dávkach spôsobuje timeout a pád
+# J-004 — Analýza: Pečatenie, race condition, a prehľad bugov od Milady
 
-## Čo sa riešilo
+## Vstup od Milady (testerka) — kompletný prehľad
 
-Testerka Milady nahlásila, že pri 50ks dávkach so zapnutým pečatením sa nafukuje čas a dávka padá. Zároveň dodala kompletný prehľad bugov naprieč DEV a TEST prostrediami pre JVP a DP agendy.
-
-## Vstup od Milady — prehľad bugov
-
-### DEV
-- **JVP**: SPISREG-2394 (nedotiahnutý spracovateľ, Nuaktiv)
-- **DP**: SPISREG-1517 (spisy V riešení, chýbajúce čísla), SPISREG-2428 (nedotiahnutý spracovateľ)
-
-### TEST
-- **JVP**: SPISREG-2422 (nedotiahnutý spracovateľ), SPISREG-2695 (nový, rovnaká chyba ako DP 2688)
-- **DP**: SPISREG-2423 (nedotiahnutý spracovateľ), SPISREG-2688 (nový), SPISREG-2690 (MEGA BUG, Tibor)
-
-### EESSI
-- Dávky zbiehajú OK, značka CB02 OK
+### Hlavný problém
+> "Dávky 50ks keď sme zapli pečatenie tak sa nafukuje čas a nám to padá."
 
 ### Stav testovania
-- DEV: len retesty opravených bugov
-- TEST DP: pretestované vrátane 50ks dávky, nájdené nové bugy
-- TEST JVP: pretestované variácie pre FO/PO, 50+ dávky pozastavené do opravy bugov
 
-## Analýza
+**EESSI**: OK — dávky zbiehajú z oboch priečinkov, pridaná značka CB02 spracovaná OK.
 
-Analyzované zdrojové kódy (registratura-services-integration + batch-services-integration), DNR dokument a existujúce findingy.
+**TEST — DP hromadné dávky**: Pretestované všetky variácie vrátane 50ks dávky. Po retestoch a dôkladnej kontrole pridané nové bugy.
 
-**Kľúčový nález**: Pečatenie (FormConfiguration.signature = 1) pridáva pre každý dokument externý SOAP call na CEP službu ÚPVS (Scenario36Sign). Pri 50 dokumentoch to môže nafúknuť čas nad JTA transaction timeout → RollbackException → symptómy pozorované v SPISREG-2688 a SPISREG-1517.
+**TEST — JVP hromadné dávky**: Pretestované variácie pre FO/PO, tlačivá `30807484.Rozhodnutie_o_poistnom.sk.jvp` a `30807484.Rozhodnutie_na_penale.sk.jvp`, pobočka BAM. Väčšie dávky 50+ pozastavené do opravy bugov.
 
-## Výstupy
+**DEV**: Len retesty opravených bugov pre DP a JVP.
 
-- **F-016** — nový finding: batch sealing timeout crash (critical)
-- Identifikované 4 root causes: transaction timeout, CEP latencia, connection pool, memory pressure
-- Navrhnuté 8 opatrení (3 okamžité, 3 strednodobé, 2 dlhodobé)
-- Korelácia 5 bugov s finding F-016
+### Kompletný zoznam bugov
 
-## Druhá analýza — F-017: Race condition v S312
+#### DEV — JVP (3.1.2)
+| Bug | Popis | Assignee | Poznámka |
+|-----|-------|----------|----------|
+| SPISREG-2394 | Nedotiahnuté údaje o spracovateľovi na zázname | Roman | Nuaktiv (p. Pavlenda) |
 
-Roman potvrdil symptóm: duálne spracovanie toho istého záznamu výstupných dokumentov v S312. Jeden uspeje, druhý neuspeje, vzájomne si prepíšu výsledok.
+#### DEV — DP (3.1.2)
+| Bug | Popis | Assignee | Poznámka |
+|-----|-------|----------|----------|
+| SPISREG-1517 | Po spracovaní dávky spisy zostali "V riešení" namiesto "Vybavený", čísla záznamov sa neuložili do DB | Roman | |
+| SPISREG-2428 | Nedotiahnuté údaje o spracovateľovi na zázname | Roman | Nuaktiv (p. Pavlenda) |
 
-Analýza kódu odhalila **úplnú absenciu concurrency control**:
-- Žiadny `@Version` (optimistický locking) na entitách
-- Žiadny `SELECT FOR UPDATE` (pesimistický locking) v batch queries
-- Žiadna deduplikácia pri `split()` + paralelnom spracovaní
+#### TEST — JVP (3.1.2)
+| Bug | Popis | Assignee | Poznámka |
+|-----|-------|----------|----------|
+| SPISREG-2422 | Nedotiahnuté údaje o spracovateľovi na zázname | Roman | Nuaktiv (p. Pavlenda) |
+| SPISREG-2695 | Nový bug | Roman | "Podľa mňa ide o tú istú chybu ako pri DP dávke bug 2688" |
 
-Navrhnuté 4 varianty riešenia, odporúčaný: **Variant A (optimistický locking)** — `@Version` na EntityBase + ALTER TABLE + ošetrenie OptimisticLockException.
+#### TEST — DP (3.1.2)
+| Bug | Popis | Assignee | Poznámka |
+|-----|-------|----------|----------|
+| SPISREG-2423 | Nedotiahnuté údaje o spracovateľovi na zázname | Roman | Nuaktiv (p. Pavlenda) |
+| SPISREG-2688 | Nový bug | Roman | |
+| SPISREG-2690 | Nový bug — MEGA BUG | Tibor | "Taký som ešte nezadala" |
 
-Pravdepodobne zodpovedá za SPISREG-2690 (MEGA BUG).
+### Kategorizácia bugov (naša analýza)
 
-## Poznámky
+Bugy spadajú do 3 oddelených problémov:
 
-Tri oddelené problémy:
-1. **Pečatenie + timeout** (F-016) — SPISREG-2688, 2695, 1517
-2. **Race condition / duálne spracovanie** (F-017) — SPISREG-2690 (MEGA BUG)
-3. **Nedotiahnutý spracovateľ / Nuaktiv** — SPISREG-2394, 2422, 2423, 2428 — Roman rieši s p. Pavlendom, oddelené
+1. **Pečatenie + timeout** (F-016): SPISREG-2688, SPISREG-2695, SPISREG-1517
+2. **Race condition / duálne spracovanie** (F-017): SPISREG-2690 (MEGA BUG)
+3. **Nedotiahnutý spracovateľ / Nuaktiv**: SPISREG-2394, SPISREG-2422, SPISREG-2423, SPISREG-2428 — Roman rieši s p. Pavlendom
+
+## Vstup od Romana (developer)
+
+### Potvrdenie race condition v S312
+> "Duálne spracovanie toho istého záznamu výstupných dokumentov kde jeden uspeje a druhý neuspeje a vzájomne si prepíšu výsledok. Scenár 3.1.2. V niektorých prípadoch vznikne aj správny záznam."
+
+### Čaká sa na podklad
+- Mail od Nuaktivu — súvisí s problémom spracovateľa (SPISREG-2394 a súvisiace)
+
+## Analýza 1 — F-016: Pečatenie pri 50ks dávkach
+
+### Čo sme zistili
+
+Prečítané a analyzované:
+- DNR dokument (R1_1_DNR_DETAILNY_NAVRH_RIESENIA_Projekt_ISREG_2.2_FINAL.pdf) — sekcie 5.2.1.6 (Hromadné spracovanie), 5.2.2 (Prepojenie na agendové systémy)
+- Zdrojový kód registratura-services-integration:
+  - `FormConfiguration.java` — pole `signature`: 1=pečať, 2=faximile, 3=mandátny podpis
+  - `Scenario36Sign.java` — SOAP volanie CEP služby ÚPVS pre digitálne podpísanie
+  - `ObjectsRegistryRecordProcessingSendDto.java` — `signRegistryRecordData` boolean flag
+  - `SignRequestMapper.java` — mapovanie typov podpisov (XAdES, CAdES, PAdES, ASIC)
+  - `application.properties` — DB pool max=30, acquisition timeout=60s
+  - `CommonRouteConfiguration.java` — retry pattern: 10s, 60s, 300s
+
+### Identifikované root causes
+
+1. **Transaction timeout** (hlavný): JTA default ~300s, pečatenie 50 dokumentov prekročí limit → RollbackException
+2. **CEP latencia**: Externý SOAP call pre každý dokument (2-10s per doc × 50 = 100-500s)
+3. **Connection pool exhaustion**: Thready držia DB connections počas čakania na CEP
+4. **Memory pressure**: F-013 (žiadna paginácia) + signing buffers
+
+### Navrhnuté opatrenia
+
+**Okamžité (hotfix):**
+- O-1: Zvýšiť transaction timeout (300→600s)
+- O-2: Zvýšiť DB connection pool (30→50)
+- O-3: Znížiť veľkosť dávky na 20-25 pre formuláre s pečatením
+
+**Strednodobé:**
+- O-4: Oddeliť pečatenie od hlavnej transakcie (async)
+- O-5: Paginácia pre S38 (F-013)
+- O-6: Konfigurovateľný thread pool
+
+**Dlhodobé:**
+- O-7: Circuit breaker na CEP službu
+- O-8: Monitoring a alerting
+
+## Analýza 2 — F-017: Race condition v S312
+
+### Čo sme zistili
+
+Prečítané a analyzované:
+- Všetky entity classes: `EntityBase.java`, `DocumentBase.java`, `BatchBase.java`, `Submission.java`
+- Named queries pre batch spracovanie
+- `JpaRouteConfiguration.java` — 3-level error handling
+- DB schéma (`db.changelog-submission.xml`)
+- `ReplayMessagesEndpointRoute.java` — split() pattern
+
+### Kľúčový nález
+
+**Úplná absencia concurrency control v celom batch pipeline:**
+- Žiadny `@Version` (optimistický locking) na žiadnej entite
+- Žiadny `SELECT FOR UPDATE` (pesimistický locking) v queries
+- Žiadna deduplikácia pri paralelnom spracovaní cez `split()`
+- `modified` trigger je čisto audit, nie conflict detection
+- Dva thready môžu čítať, spracovať a zapísať ten istý záznam bez akejkoľvek detekcie konfliktu
+
+### Navrhnuté riešenie
+
+4 varianty, odporúčaný postup:
+
+**Hotfix**: Variant D — `threads(1,1)` namiesto `threads(10,10)` pre S312. Eliminuje race condition okamžite, ale je pomalší.
+
+**Produkcia**: Variant A — optimistický locking:
+1. DB migrácia: `ALTER TABLE ... ADD version BIGINT NOT NULL DEFAULT 0`
+2. Entity: `@Version private long version` na `EntityBase`
+3. Camel: `onException(OptimisticLockException.class)` s retry + reload
+4. Idempotency check pred IS AR volaním
+
+Kompletný dizajn implementácie vrátane sekvenčného diagramu, testovacieho plánu a rollback plánu je v F-017.
+
+## Výstupy session
+
+- **F-016** — `docs/findings/F-016_2026-04-01_batch-sealing-timeout-crash.md`
+- **F-017** — `docs/findings/F-017_2026-04-01_s312-race-condition-duplicate-processing.md`
+- **STATE.md** aktualizovaný
+- **BREAKDOWN.md** aktualizovaný (2B.9 a 2B.10)
+- Čaká sa na: podklad od Nuaktivu (spracovateľ problém)
