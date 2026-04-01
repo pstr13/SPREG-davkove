@@ -27,6 +27,7 @@ F-016/F-017/F-018: pečatenie timeout + race condition + návrh riešenia na 100
 - **F-017 identifikovaný** (2026-04-01) — race condition v S312: duálne spracovanie záznamu, chýba concurrency control
 - **F-017 opatrenia**: hotfix Variant D (1 thread), produkcia Variant A (optimistický locking)
 - **F-018 návrh**: async pečatenie oddelené od Insertu — stratégia na 100K VD/deň
+- **F-019 identifikovaný** (2026-04-01) — chybný spracovateľ na zázname: `getNpUser()` hardcoded namiesto agenda-specific, `batch_registrar` prázdny pre JVP
 
 ## Čo blokuje
 - **F-016**: 50ks dávky s pečatením nepoužiteľné kým sa neimplementuje aspoň O-1 (transaction timeout)
@@ -39,7 +40,7 @@ F-016/F-017/F-018: pečatenie timeout + race condition + návrh riešenia na 100
 3. **Roman**: F-017 produkčný fix — implementovať Variant A (optimistický locking: @Version + ALTER TABLE)
 4. **Roman**: Skontrolovať logy z pádu 50ks dávky — potvrdiť TransactionTimeout/RollbackException
 5. **Roman**: Overiť F-009 (onException scope)
-6. **Roman**: Nuaktiv problém (spracovateľ) — SPISREG-2394/2422/2423/2428, čaká sa na podklad od Nuaktivu
+6. **Roman**: F-019 fix — agenda-specific user resolution v S334 + batch_registrar pre JVP (SPISREG-2394/2422/2423/2428) — viď docs/findings/F-019
 
 ## Prehľad bugov od Milady (2026-04-01)
 
